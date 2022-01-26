@@ -4,11 +4,11 @@ import static java.lang.Math.sin;
 import static java.lang.Math.toRadians;
 import static java.lang.System.out;
 
-import java.util.Scanner;
-
 //Name: 
 
 public class Lab18TShirtLauncher {
+
+    private Lab18TShirtLauncher(){}
 
     public static void Lab18() {
         final double GRAV = 9.8;

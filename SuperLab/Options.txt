@@ -24,3 +24,5 @@ Options:
     Lab16 - Lucky Dice
     Lab17 - Pendulum
     Lab18 - TShirtLauncher
+    Lab19 - Not added
+    Lab20 - PigLatin

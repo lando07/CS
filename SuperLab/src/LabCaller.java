@@ -55,6 +55,12 @@ public class LabCaller {
         else if (opt == 18){
             Lab18TShirtLauncher.Lab18();
         }
+        else if (opt == 19){
+            //I have yet to add this
+        }
+        else if (opt == 20){
+            Lab20PigLatin.Lab20();
+        }
         else{
             out.println("Invalid lab.");
         }
