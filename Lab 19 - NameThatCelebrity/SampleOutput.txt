@@ -1,0 +1,42 @@
+************************************************************
+* YOUR PRACTICE PROBLEM OUTPUT SHOULD LOOK JUST LIKE THIS! *
+************************************************************
+
+Type something, will ya >>> salsa
+That string is 5 long.
+
+Type something else >>> tortilla chips
+Removing first character: ortilla chips
+
+Type something else >>> mountain dew
+Removing last character: mountain de
+
+Type a word >>> Salsa
+Type another word >>> Good
+GoodSalsaGood
+
+Type a string to cut in half >>> ComputerScience!
+First half: Computer
+
+Type a word >>> Salsa
+Type another word >>> Chips
+alsahips
+
+Type something that might start with salsa >>> salsaTownUSA!
+Yummy!
+
+Type something else >>> don't wanna
+Inside part: on't wann
+
+Type fish please >>> no
+Lame!
+
+Type a string with an odd number of characters >>> SalsaGood!!
+Middle 3: aGo
+
+************************************************
+* YOUR APP OUTPUT SHOULD LOOK SIMILAR TO THIS! *
+************************************************
+
+See video in instructions for output sample.
+

@@ -1,0 +1,50 @@
+************************************************************
+* YOUR PRACTICE PROBLEM OUTPUT SHOULD LOOK JUST LIKE THIS! *
+************************************************************
+
+Enter a double for x >>> 3.6
+Enter a double for y >>> 2.5
+Using formula in problem 1, the answer is about 6071
+
+Enter a double for r >>> 4.5
+Using formula in problem 2, the answer is 381.7035074111598
+
+Enter a double for z >>> 8.2
+Using formula in problem 3, the answer is 4520.217599999998
+
+Enter a double for x >>> 6.5
+Using formula in problem 4, the answer is 0.8750612633917001
+
+Enter a double for x >>> 4.7
+Using formula in problem 5, the answer is about 2428
+
+Enter a double for a >>> 3.3
+Enter a double for b >>> 2.2
+Using formula in problem 6, the answer is 2.459674775249768
+
+Enter a runway bearing (as whole num) >>> 179
+Oh, you're talking about Runway 18
+
+Enter three integers (separated by spaces) >>> 13 -15 11
+The smallest of those 3 numbers is -15
+
+************************************************
+* YOUR APP OUTPUT SHOULD LOOK SIMILAR TO THIS! *
+************************************************
+
+Enter launch velocity (m/s) >>> 20
+Enter launch angle (degrees) >>> 45
+
+Projectile's path:
+Time: 0 seconds
+	x-pos: 0.0 meters
+	y-pos: 0.0 meters
+Time: 1 seconds
+	x-pos: 14.142135623730951 meters
+	y-pos: 9.242135623730949 meters
+Time: 2 seconds
+	x-pos: 28.284271247461902 meters
+	y-pos: 8.684271247461897 meters
+Time: 3 seconds
+	x-pos: 42.42640687119285 meters
+	y-pos: 0.0 meters

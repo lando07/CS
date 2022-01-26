@@ -1,0 +1,50 @@
+************************************************************
+* YOUR PRACTICE PROBLEM OUTPUT SHOULD LOOK JUST LIKE THIS! *
+************************************************************
+
+Enter an integer >>> 16
+Factors of 16 >>> 1 2 4 8 16 
+
+Factors of 14 >>> 1 2 7 14 
+
+Printing 15 random numbers between -5 and 5, inclusive.
+-3 5 4 2 -5 5 -2 2 0 -2 4 4 0 -3 -1 
+
+Can I get them all? >> 31 31 31 32 31 33 
+Got them all!
+
+Enter an integer to test for perfection >>> 28
+28 is perfect!
+
+Choose: (1)ROCK (2)PAPER (3)SCISSORS (4)Quit >>> 1
+Computer chooses SCISSORS. ROCK crushes SCISSORS. You win!
+
+Choose: (1)ROCK (2)PAPER (3)Scissors (4)Quit >>> 2
+Computer chooses SCISSORS. SCISSORS cut PAPER. Computer wins!
+
+Choose: (1)ROCK (2)PAPER (3)SCISSORS (4)Quit >>> 3
+Computer chooses SCISSORS. SCISSORS ties with SCISSORS. No winner.
+
+Choose: (1)ROCK (2)PAPER (3)SCISSORS (4)Quit >>> 1
+Computer chooses PAPER. PAPER covers ROCK. Computer wins!
+
+Choose: (1)ROCK (2)PAPER (3)SCISSORS (4)Quit >>> 4
+
+
+
+************************************************
+* YOUR APP OUTPUT SHOULD LOOK SIMILAR TO THIS! *
+************************************************
+
+Number of faces on the die? >>> 12
+Number of simulations? >>> 8
+
+Simulation 1: Number of rounds to reach 1000 >>> 85
+Simulation 2: Number of rounds to reach 1000 >>> 74
+Simulation 3: Number of rounds to reach 1000 >>> 75
+Simulation 4: Number of rounds to reach 1000 >>> 74
+Simulation 5: Number of rounds to reach 1000 >>> 78
+Simulation 6: Number of rounds to reach 1000 >>> 75
+Simulation 7: Number of rounds to reach 1000 >>> 81
+Simulation 8: Number of rounds to reach 1000 >>> 78
+Average number of rounds for all simulations >>> 77

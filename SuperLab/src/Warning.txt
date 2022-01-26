@@ -1,0 +1,7 @@
+I highly reccomend you execute this file from the terminal(it runs better that way)
+
+If you are not, then re-execute this from the terminal.
+
+If you want to proceed without doing the instructions above, proceed at your own risk.
+
+Press ENTER to proceed(this message will not come up if you execute from the terminal):

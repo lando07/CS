@@ -1,0 +1,47 @@
+************************************************************
+* YOUR PRACTICE PROBLEM OUTPUT SHOULD LOOK JUST LIKE THIS! *
+************************************************************
+
+Type something, will ya >>> okay
+Okay
+
+Type something, will ya >>> WaCkY wEaSeLs
+wacky weaseLS
+
+Type something, will ya >>> heebie jeebie
+That string has 6 e's.
+
+Type something, will ya >>> hipster chips
+hi appears 2 times.
+
+Enter a string >>> booger
+Enter a target string >>> og
+Found It!
+
+Enter a string >>> salsa is good
+Repeat how many last letters? >>> 4
+goodgoodgoodgood
+
+Type your first and last name >>> Kris McCoy
+Kris MCCOY
+
+Enter an email address >>> mccoykr@friscoisd.org
+friscoisd.org
+
+Enter a string with *'s >>> *a*b**c*d*e*f*****
+abcdef
+
+************************************************
+* YOUR APP OUTPUT SHOULD LOOK SIMILAR TO THIS! *
+************************************************
+
+Type a word (or "quit") >>> fred
+edfray
+Type a word (or "quit") >>> strapped
+appedstray
+Type a word (or "quit") >>> biggle
+igglebay
+Type a word (or "quit") >>> effort
+efforthay
+Type a word (or "quit") >>> quit
+Bye!
