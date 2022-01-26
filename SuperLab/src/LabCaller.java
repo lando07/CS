@@ -56,7 +56,7 @@ public class LabCaller {
             Lab18TShirtLauncher.Lab18();
         }
         else if (opt == 19){
-            //I have yet to add this
+            Lab19NameThatCelebrity.Lab19();
         }
         else if (opt == 20){
             Lab20PigLatin.Lab20();
