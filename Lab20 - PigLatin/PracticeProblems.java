@@ -10,7 +10,7 @@ public class PracticeProblems
         //1
         out.print("Type something, will ya >>> ");
         String str = console.nextLine();
-        str = str.substring(0,str.length()-(str.length()-1)).toUpperCase() + str.substring(1);
+        str = str.substring(0,1).toUpperCase() + str.substring(1).toLowerCase();
         out.println(str+"\n");
 
         //2

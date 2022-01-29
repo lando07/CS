@@ -1,8 +1,6 @@
 #BlueJ class context
-comment0.target=pigLatinConverter
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ pigLatinConverter\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=engLang
-comment1.target=java.lang.String\ convert(java.lang.String)
-comment2.params=word
-comment2.target=int\ findFirstVowelIndex(java.lang.String)
-numComments=3
+comment0.params=engLang
+comment0.target=java.lang.String\ convert(java.lang.String)
+comment1.params=word
+comment1.target=int\ findFirstVowelIndex(java.lang.String)
+numComments=2
