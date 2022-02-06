@@ -2,8 +2,14 @@ import static java.lang.System.*;
 import static java.lang.Math.*;
 import java.util.*;
 
-class ThreadTemplate extends Thread {
+class ThreadTemplate implements Runnable {
+    long startNum;
+    long endNum;
 
+    public void run() {
+        out.print(Thread.currentThread().getId());
+        out.println(" " + startNum + endNum);
+    }
 }
 
 public class MultithreadPNC {
@@ -24,11 +30,17 @@ public class MultithreadPNC {
                 if (integer % 8 == 0) {
                     long intDiff = integer / 8;
                     long[] numArr = new long[8];
-                    for (int i = 0; i < 8; i += intDiff) {
-                        numArr[i] = i + intDiff;
+                    for (int i = 0; i < 8; i++) {
+                        long e = i * intDiff;
+                        numArr[i] = e + intDiff;
                     }
                     for (int i = 0; i < 8; i++) {
-                        out.println(numArr[i]);
+                        ThreadTemplate temp = new ThreadTemplate();
+                        Thread objThread = new Thread(new ThreadTemplate());
+                        temp.startNum = numArr[i] - (intDiff - 1);
+                        temp.endNum = numArr[i];
+                        ThreadTemplate obj = new ThreadTemplate();
+                        objThread.start();
                     }
                 } else {
                     double amountPerThread = integer / (double) 8;
