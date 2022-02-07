@@ -1,0 +1,48 @@
+************************************************************
+* YOUR PRACTICE PROBLEM OUTPUT SHOULD LOOK JUST LIKE THIS! *
+************************************************************
+
+2
+4
+true
+Guess what's in the 6th spot >>> 7
+Guess what's in the 6th spot >>> 1
+Guess what's in the 6th spot >>> 6
+Guess what's in the 6th spot >>> 2
+50
+10
+12
+[2, 4, 12, 50, 6, 2, 3, 10, 9, 0, 9, 6]
+[0.0, 0.0, 0.0, 0.0]
+[1.2, 3.4, 5.6, 7.8]
+
+************************************************
+* YOUR APP OUTPUT SHOULD LOOK SIMILAR TO THIS! *
+************************************************
+
+How many single digit numbers should I generate? >> 12
+Simulation 1: 2
+Simulation 2: 9
+Simulation 3: 7
+Simulation 4: 4
+Simulation 5: 5
+Simulation 6: 0
+Simulation 7: 2
+Simulation 8: 6
+Simulation 9: 7
+Simulation 10: 1
+Simulation 11: 0
+Simulation 12: 2
+
+** Here's the final count **
+0s found: 2
+1s found: 1
+2s found: 3
+3s found: 0
+4s found: 1
+5s found: 1
+6s found: 1
+7s found: 2
+8s found: 0
+9s found: 1
+
