@@ -1,0 +1,28 @@
+************************************************************
+* YOUR PRACTICE PROBLEM OUTPUT SHOULD LOOK JUST LIKE THIS! *
+************************************************************
+
+Last element is 6
+Number of elements is 12
+2 4 0 8 6 2 3 5 9 0 9 6 
+Sum of all numbers is 54
+Contains an odd
+Found a zero
+Plenty of 6s
+Found 2-3 combo
+No three in a row
+
+************************************************
+* YOUR APP OUTPUT SHOULD LOOK SIMILAR TO THIS! *
+************************************************
+
+How many numbers will you enter? >>> 10
+Type numbers with spaces in between >>> 9.5 8 7 1 1 -8 -1 6 6.1 6.2
+
+Largest number: 9.5
+Smallest number: -8.0
+Average (rounded to tenth): 3.6
+Number of Evens: 5
+Longest repeat: 1.0 is repeated 2 times
+Longest increasing run: -8.0 -1.0 6.0 6.1 6.2 
+Longest decreasing run: 9.5 8.0 7.0 1.0 
