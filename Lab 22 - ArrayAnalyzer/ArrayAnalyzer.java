@@ -18,17 +18,18 @@ public class ArrayAnalyzer
         double repeatNum = 0;
         int longestRepeatLength = 0;
         double longestRepeatNum = 0;
-        int startOfRun;
-        int endOfRun;
+        int localRunStart = 0;
+        int backupRunStrt = 0;
+        int backupRunEnd = 0;
+        int localRunEnd = 0;
+        int localRunLength = 0;
+        int startOfRun = 0;
+        int endOfRun = 0;
         int longestRunLength = 0;
-        double[] longestIncRun;
-        double[] longestDecRun;
         //start of program, getting arr length
         out.print("How many numbers will you enter? >>> ");
         arrLength = console.nextInt();
         doubArr = new double[arrLength]; //this and below will make all arrays as large as possibly needed
-        longestIncRun = new double[arrLength];
-        longestDecRun = new double[arrLength];
         out.print("Type numbers with spaces in between >>> "); //puts whatever you type into the array in order
         for (int i = 0; i < doubArr.length; i++){
             double arrVar = console.nextDouble();
@@ -82,10 +83,71 @@ public class ArrayAnalyzer
         for (int i = 0; i < doubArr.length; i++){ //longest Increasing run
             if(doubArr.length - i == 1) break;
             if(doubArr[i] < doubArr[i+1]){
-                if(endOfRun > i){
-                    
+                if(localRunLength <=0){
+                    localRunLength = 2;
+                    localRunStart = i;
+                    backupRunStrt = i;
+                }
+                else{
+                    localRunLength++;
                 }
             }
+            else{
+                localRunEnd = i;
+                if(localRunLength > longestRunLength){
+                    longestRunLength = localRunLength;
+                    startOfRun = localRunStart;
+                    endOfRun = localRunEnd;
+                }
+                localRunStart = 0;
+                localRunEnd = 0;
+                localRunLength = 0;
+            }
+        }
+        if(endOfRun == 0){
+            endOfRun = doubArr.length - 1;
+            startOfRun = backupRunStrt;
+        }
+        out.print("Longest increasing run: ");
+        for(int i = startOfRun; i <= endOfRun; i++){
+            out.print(doubArr[i] + " ");
+        }
+        out.println();
+        startOfRun = 0;
+        endOfRun = 0;
+        longestRunLength = 0;
+        backupRunStrt = 0;
+        for (int i = 0; i < doubArr.length; i++){ //longest decreasing run
+            if(doubArr.length - i == 1) break;
+            if(doubArr[i] > doubArr[i+1]){
+                if(localRunLength <=0){
+                    localRunLength = 2;
+                    localRunStart = i;
+                    backupRunStrt = i;
+                }
+                else{
+                    localRunLength++;
+                }
+            }
+            else{
+                localRunEnd = i;
+                if(localRunLength > longestRunLength){
+                    longestRunLength = localRunLength;
+                    startOfRun = localRunStart;
+                    endOfRun = localRunEnd;
+                }
+                localRunStart = 0;
+                localRunEnd = 0;
+                localRunLength = 0;
+            }
+        }
+        if(endOfRun < startOfRun){
+            endOfRun = startOfRun - 2;
+            startOfRun = 0;
+        }
+        out.print("Longest decreasing run: ");
+        for(int i = startOfRun; i <= endOfRun; i++){
+            out.print(doubArr[i] + " ");
         }
     }
 }
