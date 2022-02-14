@@ -79,6 +79,12 @@ public class LabCaller {
             case 20:
                 Lab20PigLatin.Lab20();
                 break;
+            case 21:
+                Lab21SimpleHistogram.Lab21();
+                break;
+            case 22:
+                Lab22ArrayAnalyzer.Lab22();
+                break;
             default:
                 out.println("Invalid lab.");
         }
