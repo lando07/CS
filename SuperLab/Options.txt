@@ -26,5 +26,5 @@ Options:
     Lab18 - TShirtLauncher
     Lab19 - NameThatCelebrity
     Lab20 - PigLatin
-	Lab21 - SimpleHistogram
-	Lab22 - ArrayAnalyzer
+    Lab21 - SimpleHistogram
+    Lab22 - ArrayAnalyzer
