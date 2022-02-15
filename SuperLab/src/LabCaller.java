@@ -81,9 +81,11 @@ public class LabCaller {
                 break;
             case 21:
                 Lab21SimpleHistogram.Lab21();
+                UnivRefs.console.nextLine();
                 break;
             case 22:
                 Lab22ArrayAnalyzer.Lab22();
+                UnivRefs.console.nextLine();
                 break;
             default:
                 out.println("Invalid lab.");

@@ -9,6 +9,13 @@
             "name": "Launch MainExec",
             "request": "launch",
             "mainClass": "MainExec",
+            "projectName": "SuperLab_c6f4eb0f"
+        },
+        {
+            "type": "java",
+            "name": "Launch MainExec",
+            "request": "launch",
+            "mainClass": "MainExec",
             "projectName": "SuperLab_b418659f"
         },
         {
