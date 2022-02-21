@@ -5,8 +5,8 @@ public class PracticeProblems
 {
     public static void main(String[] args){
         Scanner console = new Scanner(in);
-        int[] nums = {2, 4, 0, 8, 6, 2, 3, 5, 9, 0, 9, 6};
-        // int[] nums = {2,2,4,4,4};
+        //int[] nums = {2, 4, 0, 8, 6, 2, 3, 5, 9, 0, 9, 6};
+        int[] nums = {2,2,4,4,4};
 
         //1
         out.println("Last element is " + nums[nums.length - 1]);
@@ -76,7 +76,7 @@ public class PracticeProblems
         }
         if(!Combo2_3)
             out.println("No 2-3 combo");
-            
+
         //10
         boolean Combo3InARow = false;
         for (int i = 0; i < nums.length; i++){

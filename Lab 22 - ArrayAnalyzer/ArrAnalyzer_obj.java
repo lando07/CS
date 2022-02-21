@@ -8,35 +8,35 @@ import static java.lang.Math.*;
 public class ArrAnalyzer_obj
 {
     private double[] doubArr;
-    private double[] minMaxArr = new double[2];
     public ArrAnalyzer_obj(double[] usrArr)
     {
         doubArr = usrArr;
-        minMaxArr[0] = 1;
     }
 
     double getLargestNum(){
+        double max = 0;
         for (int i = 0; i < doubArr.length - 1; i++){ //finding largest number using Math.max
             if(doubArr.length - i == 1) break;
-            minMaxArr[1] = max(doubArr[i], minMaxArr[1]);
+            max = max(doubArr[i], max);
         }
-        return minMaxArr[1];
+        return max;
     }
 
     double getSmallestNum(){
+        double min = 1;
         for (int i = 0; i < doubArr.length; i++){ //same as above, but with Math.min
             if(doubArr.length - i == 1) break;
-            minMaxArr[0] = min(doubArr[i], minMaxArr[0]);
+            min = min(doubArr[i], min);
         }
-        return minMaxArr[0];
+        return min;
     }
 
     double getAvg(){
-        double tempAvg = 0;
+        double sum = 0;
         for (int i = 0; i < doubArr.length; i++){ //getting total of all variables
-            tempAvg+= doubArr[i];
+            sum+= doubArr[i];
         }
-        return (double) round((tempAvg/doubArr.length)*10)/10;
+        return (double) round((sum/doubArr.length)*10)/10;
     }
 
     int getNumOfEvens(){
@@ -66,6 +66,8 @@ public class ArrAnalyzer_obj
                     longestRepeatLength = repeatLength;
                     longestRepeatNum = repeatNum;
                 }
+                repeatNum = 0;
+                repeatLength = 0;
             }
         }
         lngstRptAttrib[0] = longestRepeatNum;
