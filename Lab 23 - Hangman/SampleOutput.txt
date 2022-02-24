@@ -1,0 +1,50 @@
+************************************************************
+* YOUR PRACTICE PROBLEM OUTPUT SHOULD LOOK JUST LIKE THIS! *
+************************************************************
+
+The array has 8 elements.
+The first letters of each String >>> H G C S U D W N 
+Number of strings that end with 'e' >>> 2
+Total number of characters in the array >>> 38
+I see some long words!
+The array contains 5 e's.
+Number of words with an 'e' >>> 4
+
+************************************************
+* YOUR APP OUTPUT SHOULD LOOK SIMILAR TO THIS! *
+************************************************
+
+Enter a secret word >>> method
+(screen clears)
+
+Word: _ _ _ _ _ _ 
+Guesses remaining: 6
+Please guess a letter >>> p
+
+Word: _ _ _ _ _ _ 
+Guesses remaining: 5
+Please guess a letter >>> o
+
+Word: _ _ _ _ o _ 
+Guesses remaining: 5
+Please guess a letter >>> l
+
+Word: _ _ _ _ o _ 
+Guesses remaining: 4
+Please guess a letter >>> q
+
+Word: _ _ _ _ o _ 
+Guesses remaining: 3
+Please guess a letter >>> q
+
+Word: _ _ _ _ o _ 
+Guesses remaining: 2
+Please guess a letter >>> q
+
+Word: _ _ _ _ o _ 
+Guesses remaining: 1
+Please guess a letter >>> q
+
+Out of guesses!  Get rekt.  The word was: method
+
+

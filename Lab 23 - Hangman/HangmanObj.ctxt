@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=HangmanObj
+comment0.text=\r\n\ \ 012345678\r\n0\ \ \ +----+\r\n1\ \ \ |\ \ \ \ |\r\n2\ \ \ 0\ \ \ \ |\r\n3\ \ /|\\\ \ \ |\r\n4\ \ /\ \\\ \ \ |\r\n5\ \ \ \ \ \ \ \ |\r\n6\ \=\=\=\=\=\=\=\=\=\r\nthe\ parts\ are\ drawn\r\n
+comment1.params=inputWord
+comment1.target=HangmanObj(java.lang.String)
+comment2.params=
+comment2.target=void\ getHangman()
+comment3.params=
+comment3.target=java.lang.String\ getCurrentWord()
+comment4.params=
+comment4.target=java.lang.String\ getSecretWord()
+comment5.params=
+comment5.target=boolean\ compareWords()
+comment6.params=input
+comment6.target=boolean\ inputGuess(java.lang.String)
+numComments=7
