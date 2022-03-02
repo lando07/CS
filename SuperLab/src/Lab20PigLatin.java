@@ -16,7 +16,7 @@ public class Lab20PigLatin
                 //continue
             }
             else{
-                String pigLatinString = pigLatinConverter.convert(stringInput);
+                String pigLatinString = Lab20pigLatinConverter.convert(stringInput);
                 out.println(pigLatinString);
             }
         }
