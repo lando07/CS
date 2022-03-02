@@ -1,6 +1,6 @@
-public class localizedMainExcec
+public class localizedMainExec
 {
-    public localizedMainExcec(int os){
+    public localizedMainExec(int os){
         switch(os){
             case 0:
             linux.main();
@@ -14,7 +14,7 @@ public class localizedMainExcec
 class linux
 {
     static void main(){
-
+        univObjs univObjs = new univObjs(0);
     }
 }
 class win
