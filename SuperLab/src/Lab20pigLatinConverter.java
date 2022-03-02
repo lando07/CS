@@ -1,6 +1,6 @@
-public class pigLatinConverter
+public class Lab20pigLatinConverter
 {   
-    private pigLatinConverter(){}
+    private Lab20pigLatinConverter(){}
     
     public static String convert(String engLang){
         engLang = engLang.toLowerCase();

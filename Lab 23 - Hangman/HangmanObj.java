@@ -2,7 +2,7 @@ import java.util.*;
 import static java.lang.System.*;
 //Name: 
 /*
-  012345678
+012345678
 0   +----+
 1   |    |
 2   0    |
@@ -16,8 +16,9 @@ public class HangmanObj
 {
     private char[] secretWord;
     private char[] currentWord;
-    private String lettersMissed;
-    private String lettersGuessed;
+    private String lettersMissed = " ";
+    private String lettersGuessed = " ";
+    private int lettersMissedNum = 0;
     private char[][] hangman ={ //currently unused until hangmandlx is developed
             {' ',' ','+','-','-','-','-','+',' '},
             {' ',' ','|',' ',' ',' ',' ','|',' '},
@@ -45,6 +46,31 @@ public class HangmanObj
         }
     }
 
+    private void setHangman(){
+        switch(lettersMissedNum){
+            case 0:
+                break;
+            case 1:
+                hangman[2][2] = '0';
+                break;
+            case 2:
+                hangman[3][2] = '|';
+                break;
+            case 3:
+                hangman[3][1] = '/';
+                break;
+            case 4:
+                hangman[3][3] = '\\';
+                break;
+            case 5:
+                hangman[4][1] = '/';
+                break;
+            case 6:
+                hangman[4][3] = '\\';
+                break;
+        }
+    }
+
     public String getCurrentWord(){
         String currentWordStr = "";
         for (int i = 0; i < currentWord.length; i++){
@@ -60,11 +86,11 @@ public class HangmanObj
         }
         return secretWordStr;
     }
-    
+
     public String getMissedLetters(){
         return lettersMissed;
     }
-    
+
     public String getGuessedLetters(){
         return lettersGuessed;
     }
@@ -79,6 +105,12 @@ public class HangmanObj
     }
 
     public boolean inputGuess(String input){
+        try(Scanner console = new Scanner(in))
+        {
+            while(input.isEmpty()){
+                input = console.nextLine();
+            }
+        }
         char inputChar = input.charAt(0);
         boolean letterGuessed = false;
         for(int i = 0; i < currentWord.length; i++){
@@ -88,11 +120,17 @@ public class HangmanObj
             }
         }
         if(letterGuessed){
+            if(lettersGuessed.contains(input))
+                return true;
             lettersGuessed += inputChar + " ";
             return true;
         }
         else{
+            if(lettersMissed.contains(input))
+                return false;
             lettersMissed += inputChar + " ";
+            lettersMissedNum++;
+            setHangman();
             return false;
         }
     }
