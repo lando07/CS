@@ -7,10 +7,10 @@ public class Lab22ArrayAnalyzer {
     public static void Lab22() {
         double[] inputArr;
         out.print("How many numbers will you enter? >>> ");
-        inputArr = new double[UnivRefs.console.nextInt()];
+        inputArr = new double[console.nextInt()];
         out.print("Type numbers with spaces in between >>> ");
         for (int i = 0; i < inputArr.length; i++) {
-            inputArr[i] = UnivRefs.console.nextDouble();
+            inputArr[i] = console.nextDouble();
         }
         Lab22ArrAnalyzer_obj arrAnalyzer = new Lab22ArrAnalyzer_obj(inputArr);
         double largestNum = arrAnalyzer.getLargestNum();

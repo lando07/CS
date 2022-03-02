@@ -18,14 +18,14 @@ public class Lab06Calculator {
         System.out.println("5 - modulus (%)");
         System.out.println("");
         System.out.print("Choose an operation from the menu >>> ");
-        operator = UnivRefs.console.nextInt();
-        UnivRefs.console.nextLine();
+        operator = console.nextInt();
+        console.nextLine();
         System.out.print("Enter first number >>> ");
-        num1 = UnivRefs.console.nextDouble();
-        UnivRefs.console.nextLine();
+        num1 = console.nextDouble();
+        console.nextLine();
         System.out.print("Enter second number >>> ");
-        num2 = UnivRefs.console.nextDouble();
-        UnivRefs.console.nextLine();
+        num2 = console.nextDouble();
+        console.nextLine();
 
         if (operator == 1) {
             endResult = num1 + num2;

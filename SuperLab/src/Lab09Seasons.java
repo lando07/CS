@@ -9,11 +9,11 @@ public class Lab09Seasons {
         int month;
         int day;
         System.out.print("Enter month as integer >>> ");
-        month = UnivRefs.console.nextInt();
-        UnivRefs.console.nextLine();
+        month = console.nextInt();
+        console.nextLine();
         System.out.print("Enter day as integer >>> ");
-        day = UnivRefs.console.nextInt();
-        UnivRefs.console.nextLine();
+        day = console.nextInt();
+        console.nextLine();
 
         if (month == 12 || month <= 3) {
             if (day <= 16) {

@@ -10,7 +10,7 @@ public class Lab21SimpleHistogram {
         Random rand = new Random();
         int[] histogram = new int[10];
         out.print("How many single digit numbers should I generate? >> ");
-        int toGen = UnivRefs.console.nextInt();
+        int toGen = console.nextInt();
         for (int i = 0; i < toGen; i++) {
             int generated = rand.nextInt(10);
             out.println("Simulation " + i + ": " + generated);

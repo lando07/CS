@@ -1,7 +1,7 @@
-import static java.lang.System.out;
+import java.io.IOException;
 
-public class main extends localizedMainExec {
-    public static void main(String[] args) {
+public class main {
+    public static void main(String[] args) throws IOException{
         String osStr = System.getProperty("os.name").toLowerCase();
         if (osStr.contains("windows"))
             new localizedMainExec(1);

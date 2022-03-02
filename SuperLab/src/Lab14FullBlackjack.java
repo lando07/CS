@@ -16,9 +16,9 @@ public class Lab14FullBlackjack {
             int playerTotal;
             int dealerTotal;
             int hitOrStandNum;
-            int num1 = UnivRefs.rand.nextInt(10) + 2;// like said up above, to make it from 2 to 11, I add to to "shift"
+            int num1 = rand.nextInt(10) + 2;// like said up above, to make it from 2 to 11, I add to to "shift"
                                                      // all the values up by two
-            int num2 = UnivRefs.rand.nextInt(10) + 2;// num1 and num2 will be used to store the card numbers for later
+            int num2 = rand.nextInt(10) + 2;// num1 and num2 will be used to store the card numbers for later
                                                      // use
             boolean hitOrStand;
             boolean somebodyBusted = false;
@@ -26,18 +26,18 @@ public class Lab14FullBlackjack {
             playerTotal = num1 + num2;
             while (playerTotal >= 21) {// this secretly changes the numbers back into good numbers if they're bad
                                        // without anyone knowing until good numbers are drawn
-                num1 = UnivRefs.rand.nextInt(10) + 2;
-                num2 = UnivRefs.rand.nextInt(10) + 2;
+                num1 = rand.nextInt(10) + 2;
+                num2 = rand.nextInt(10) + 2;
                 playerTotal = num1 + num2;
             }
             out.println("You are dealt a " + num1 + "\nYou are dealt a " + num2
                     + "\nThe dealer is also dealt 2 cards, but you can't see them.\nYour Hand total >>> "
                     + playerTotal);
-            num1 = UnivRefs.rand.nextInt(10) + 2;
-            num2 = UnivRefs.rand.nextInt(10) + 2;
+            num1 = rand.nextInt(10) + 2;
+            num2 = rand.nextInt(10) + 2;
             dealerTotal = num1 + num2;
             out.print("Would you like to (1)Hit or (2)Stand? ");
-            hitOrStandNum = UnivRefs.console.nextInt();
+            hitOrStandNum = console.nextInt();
             while (hitOrStandNum > 2 || hitOrStandNum <= 0) {// if any trolls think they can get by by typing a number
                                                              // other than 1 or two, this safeguard is here to protect
                 out.print("Would you like to (1)Hit or (2)Stand? ");
@@ -45,7 +45,7 @@ public class Lab14FullBlackjack {
             hitOrStand = hitOrStandNum < 2;
             out.println();
             while (hitOrStand) {// you want to hit
-                num1 = UnivRefs.rand.nextInt(10) + 2;
+                num1 = rand.nextInt(10) + 2;
                 playerTotal += num1;
                 out.println("You are dealt a(n) " + num1 + "\nYour new hand total >>> " + playerTotal);
                 if (playerTotal > 21) {
@@ -55,7 +55,7 @@ public class Lab14FullBlackjack {
                     break;
                 }
                 out.print("Would you like to (1)Hit or (2)Stand? ");
-                hitOrStandNum = UnivRefs.console.nextInt();
+                hitOrStandNum = console.nextInt();
                 while (hitOrStandNum > 2 || hitOrStandNum <= 0) {
                     out.print("Would you like to (1)Hit or (2)Stand? ");
                 }
@@ -69,7 +69,7 @@ public class Lab14FullBlackjack {
                 somebodyBusted = true;
             } else {
                 while (dealerTotal < 15) {
-                    num1 = UnivRefs.rand.nextInt(10) + 2;
+                    num1 = rand.nextInt(10) + 2;
                     dealerTotal += num1;
                     out.println("Dealer draws a(n) " + num1);
                     out.println("New dealer total >>> " + dealerTotal);
@@ -102,7 +102,7 @@ public class Lab14FullBlackjack {
                     out.println(whoWon + " wins.");
                 }
                 out.print("Play again? (1)Yes or (2)No? ");
-                playAgainNum = UnivRefs.console.nextInt();
+                playAgainNum = console.nextInt();
                 if (playAgainNum == 1) {
                     out.println("\u000c"); // clears screen in bluej
                     continue;
@@ -111,7 +111,7 @@ public class Lab14FullBlackjack {
                 } else {
                     while (playAgainNum != 1 || playAgainNum != 2) {
                         out.print("Play again? (1)Yes or (2)No? ");
-                        playAgainNum = UnivRefs.console.nextInt();
+                        playAgainNum = console.nextInt();
                         if (playAgainNum == 1) {
                             out.println("\u000c"); // clears screen in bluej
                         } else if (playAgainNum == 2) {

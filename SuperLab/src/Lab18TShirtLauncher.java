@@ -13,9 +13,9 @@ public class Lab18TShirtLauncher {
     public static void Lab18() {
         final double GRAV = 9.8;
         out.print("Enter launch velocity (m/s) >>> ");
-        double velocity = UnivRefs.console.nextDouble();
+        double velocity = console.nextDouble();
         out.print("Enter launch angle (degrees) >>> ");
-        double angle = UnivRefs.console.nextDouble();
+        double angle = console.nextDouble();
         out.println("\nProjectile's path:");
         double xPos = 0;
         double yPos = 0;
@@ -33,6 +33,6 @@ public class Lab18TShirtLauncher {
             }
             sec++;
         }
-        UnivRefs.console.nextLine();
+        console.nextLine();
     }
 }

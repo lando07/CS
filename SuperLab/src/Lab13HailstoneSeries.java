@@ -9,7 +9,7 @@ public class Lab13HailstoneSeries {
     public static void Lab13() {
         long num, i = 0;
         out.print("Enter an integer from 1 to 1000 >>> ");
-        num = UnivRefs.console.nextLong();
+        num = console.nextLong();
         while (num > 1) {
             out.println(num);
             if (num % 2 == 0)

@@ -8,7 +8,7 @@ public class Lab19NameThatCelebrity {
         int triesLeft = 4;
         int difNum = 0;
         out.print("Choose a difficulty level (easy, medium, or hard) >>> ");
-        String diff = UnivRefs.console.nextLine();
+        String diff = console.nextLine();
         diff = diff.toLowerCase();
         String brokCeleb;
         if (diff.contains("easy"))
@@ -34,7 +34,7 @@ public class Lab19NameThatCelebrity {
         out.println("\nGood choice. Here's your clue: \n\n>>> " + brokCeleb + "\n");
         while (triesLeft > 0) {
             out.print("What's your guess? >>> ");
-            String ans = UnivRefs.console.nextLine();
+            String ans = console.nextLine();
 
             if (ans.equalsIgnoreCase(celeb)) {
                 if (triesLeft >= 1) {

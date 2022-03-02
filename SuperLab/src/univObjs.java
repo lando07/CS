@@ -11,15 +11,15 @@ public class univObjs {
         osParam = os;
     }
 
-    public void clear() throws Exception{
-            switch(osParam){
-                case 0: // linux/unix systems
-                    out.print("\033[H\033[2J");
-                case 1:// windows systems with dos or powershell
-                    new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-                case 2:// bluej clear console character
-                    out.print('\u000c');
-            }
+    public void clear() throws Exception {
+        switch (osParam) {
+            case 0: // linux/unix systems
+                out.print("\033[H\033[2J");
+            case 1:// windows systems with dos or powershell
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            case 2:// bluej clear console character
+                out.print('\u000c');
         }
+    }
 
 }

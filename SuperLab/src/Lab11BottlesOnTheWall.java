@@ -12,13 +12,13 @@ public class Lab11BottlesOnTheWall {
         int cokeOrBeerNum;
         String cokeOrBeer;
         System.out.print("Enter your age (whole number only) >>> ");
-        age = UnivRefs.console.nextInt();
-        UnivRefs.console.nextLine();
+        age = console.nextInt();
+        console.nextLine();
         overAge21 = age >= 21;
         if (overAge21) {
             System.out.print("Do you prefer beer or Coke (enter 1 for beer, 2 for Coke) >>> ");
-            cokeOrBeerNum = UnivRefs.console.nextInt();
-            UnivRefs.console.nextLine();
+            cokeOrBeerNum = console.nextInt();
+            console.nextLine();
             if (cokeOrBeerNum == 1) {
                 cokeOrBeer = "beer";
             } else {

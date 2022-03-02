@@ -11,7 +11,7 @@ public class Lab20PigLatin
         //if starts with a vowel add hay to the end, (y is not a vowel here)
         while(stringInput.indexOf("quit") == -1){
             out.print("Type a word (or \"quit\") >>> ");
-            stringInput = UnivRefs.console.nextLine();
+            stringInput = console.nextLine();
             if(stringInput.contains("quit")){
                 //continue
             }

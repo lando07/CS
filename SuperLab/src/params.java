@@ -2,6 +2,7 @@ public class params {
     private static params params;
     private boolean stillExploring = true;
     private int osNum;
+
     private params() {
     }
 

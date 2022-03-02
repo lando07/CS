@@ -8,7 +8,7 @@ public class Lab17Pendulum {
         boolean keepCal = true;
         do {
             out.print("Enter pendulum length in meters (or 0 to quit) >>> ");
-            double length = UnivRefs.console.nextDouble();
+            double length = console.nextDouble();
             if (length == 0) {
                 keepCal = false;
                 continue;

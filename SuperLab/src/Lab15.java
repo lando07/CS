@@ -12,11 +12,11 @@ public class Lab15 {
     public static void Lab15PrimChec() {
         int checkOrNoCheck;
         out.print("Enter 1 to check if a number is prime or 2 to exit >>> ");
-        checkOrNoCheck = UnivRefs.console.nextInt();
+        checkOrNoCheck = console.nextInt();
         while (checkOrNoCheck == 1) {
             if (checkOrNoCheck == 1) {
                 out.print("Please enter an integer to check >>> ");
-                long integer = UnivRefs.console.nextInt();
+                long integer = console.nextInt();
                 boolean prime = true;
                 double sqRT = sqrt(integer);
                 for (long i = 2; i < sqRT + 1; i++) {
@@ -32,14 +32,14 @@ public class Lab15 {
                     out.println(integer + " is NOT a prime number\n");
                 }
                 out.print("Enter 1 to check if a number is prime or 2 to exit >>> ");
-                checkOrNoCheck = UnivRefs.console.nextInt();
+                checkOrNoCheck = console.nextInt();
             }
         }
         out.println("Goodbye");
     }
 
     public static void Lab15PNC() throws Exception {
-        UnivRefs refs = UnivRefs.getInstance();
+        refs = getInstance();
         int checkOrNoCheck;
         if (console() != null) {
             String os = getProperty("os.name").toLowerCase();
@@ -53,12 +53,12 @@ public class Lab15 {
             refs.bluejClear();
         }
         out.print("Enter 1 to check if a number is prime or 2 to exit >>> ");
-        checkOrNoCheck = UnivRefs.console.nextInt();
+        checkOrNoCheck = console.nextInt();
         long primeCounter = 0;
         while (checkOrNoCheck == 1) {
             if (checkOrNoCheck == 1) {
                 out.print("Please enter an integer to check >>> ");
-                long integer = UnivRefs.console.nextLong();
+                long integer = console.nextLong();
                 double start = System.currentTimeMillis();
                 primeCounter = 0;
                 for (long i = 1; i <= integer; i++) {
@@ -79,7 +79,7 @@ public class Lab15 {
                                 + (end - start) + " Milliseconds or " + (end - start) / 1000 + " seconds.");
             }
             out.print("Enter 1 to check if a number is prime or 2 to exit >>> ");
-            checkOrNoCheck = UnivRefs.console.nextInt();
+            checkOrNoCheck = console.nextInt();
         }
         out.println("Goodbye");
     }

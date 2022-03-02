@@ -12,14 +12,14 @@ public class Lab08NutsAndBolts {
         WASHERPRICE = 1;
         System.out.println("Welcome to my hardware store!");
         System.out.print("Number of bolts >>> ");
-        int bolts = UnivRefs.console.nextInt();
-        UnivRefs.console.nextLine();
+        int bolts = console.nextInt();
+        console.nextLine();
         System.out.print("Number of nuts >>> ");
-        int nuts = UnivRefs.console.nextInt();
-        UnivRefs.console.nextLine();
+        int nuts = console.nextInt();
+        console.nextLine();
         System.out.print("Number of washers >>> ");
-        int washers = UnivRefs.console.nextInt();
-        UnivRefs.console.nextLine();
+        int washers = console.nextInt();
+        console.nextLine();
         if (nuts >= bolts) {// the boolean values in the next 2 if statements were set false from the
                             // beginning, so nothing else is needed with these.
             nutsMoreThanBolts = true;
