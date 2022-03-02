@@ -16,14 +16,14 @@ public class HangmanObj
 {
     private char[] secretWord;
     private char[] currentWord;
-    private char[] lettersMissed;
-    private char[] lettersGuessed;
-    private char[][] hangman ={
+    private String lettersMissed;
+    private String lettersGuessed;
+    private char[][] hangman ={ //currently unused until hangmandlx is developed
             {' ',' ','+','-','-','-','-','+',' '},
             {' ',' ','|',' ',' ',' ',' ','|',' '},
-            {' ',' ','0',' ',' ',' ',' ','|',' '},
-            {' ','/','|','\\',' ',' ',' ','|',' '},
-            {' ','/',' ','\\',' ',' ',' ','|',' '},
+            {' ',' ',' ',' ',' ',' ',' ','|',' '},
+            {' ',' ',' ',' ',' ',' ',' ','|',' '},
+            {' ',' ',' ',' ',' ',' ',' ','|',' '},
             {' ',' ',' ',' ',' ',' ',' ','|',' '},
             {'=','=','=','=','=','=','=','=','='}
 
@@ -36,7 +36,7 @@ public class HangmanObj
         }
     }
 
-    public void getHangman(){
+    public void getHangman(){ //same as the hangman[][] array
         for (int i = 0; i<7; i++){
             for(int e = 0; e<9; e++){
                 out.print(hangman[i][e]);
@@ -60,6 +60,14 @@ public class HangmanObj
         }
         return secretWordStr;
     }
+    
+    public String getMissedLetters(){
+        return lettersMissed;
+    }
+    
+    public String getGuessedLetters(){
+        return lettersGuessed;
+    }
 
     public boolean compareWords(){
         String secretWordStr = Arrays.toString(secretWord);
@@ -79,9 +87,13 @@ public class HangmanObj
                 letterGuessed = true;
             }
         }
-        if(letterGuessed)
+        if(letterGuessed){
+            lettersGuessed += inputChar + " ";
             return true;
-        else
+        }
+        else{
+            lettersMissed += inputChar + " ";
             return false;
+        }
     }
 }

@@ -9,7 +9,7 @@ public class PracticeProblems
     {
         Scanner console = new Scanner(in);
         String[] s = {"Hello", "Goodbye", "Computer", "Science", "Um", "Do", "What", "Now"};
-        // String[] s = {"oeee", "Do", "What", "Now"};
+        //String[] s = {"oeee", "Do", "What", "Now"};
         //1 see docx in folder for info
         //2
         out.println("The array has " + s.length + " elements.");
@@ -56,16 +56,16 @@ public class PracticeProblems
         for (int i = 0; i < s.length; i++){
             for (int e = 0; e < s[i].length(); e++){
                 if(s[i].charAt(e) == 'e')
-                numOfEs++;
+                    numOfEs++;
             }
         }
         out.println("The array contains " + numOfEs + " e's.");
-        
+
         //9
         int numOfEStrs = 0;
         for (int i = 0; i < s.length; i++){
             if(s[i].indexOf("e") == -1)
-            continue;
+                continue;
             numOfEStrs++;
         }
         out.println("Number of words with an 'e' >>> " + numOfEStrs);
