@@ -6,8 +6,12 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class localizedMainExec {
-    public static final String fileNotFound = "Oops! File not found, make sure all text files are present!";
-    public localizedMainExec(int os) throws IOException {
+    public static final String FILENOTFOUND = "Oops! File not found, make sure all text files are present!";
+
+    private localizedMainExec() {
+    }
+
+    public static void localizer(int os) throws IOException {
         switch (os) {
             case 0:
                 linux.main();
@@ -20,52 +24,56 @@ public class localizedMainExec {
 }
 
 class linux {
-    private linux(){}
-    static void main() throws IOException{
-        univObjs univObjs = new univObjs(0);
-        try(BufferedReader br = new BufferedReader(new FileReader("Welcome.txt"))){
+    private linux() {
+    }
+
+    static void main() throws IOException {
+        univObjs clearObj = new univObjs(0);
+        univObjs objs = univObjs.getInstance();
+        try (BufferedReader br = new BufferedReader(new FileReader("Welcome.txt"))) {
             String line;
-            while((line = br.readLine()) != null){
+            while ((line = br.readLine()) != null) {
                 out.println(line);
             }
+        } catch (FileNotFoundException e) {
+            out.println(localizedMainExec.FILENOTFOUND);
         }
-        catch(FileNotFoundException e){
-            out.println(localizedMainExec.fileNotFound);
-        }
-        //univObjs.nextLine(); isa confused
+        // TODO make get instance classes for scanner and random number generator
     }
 }
 
 class win {
-    private win(){}
-    static void main() throws IOException{
+    private win() {
+    }
+
+    static void main() throws IOException {
         univObjs univObjs = new univObjs(1);
-        try(BufferedReader br = new BufferedReader(new FileReader("Welcome.txt"))){
+        try (BufferedReader br = new BufferedReader(new FileReader("Welcome.txt"))) {
             String line;
-            while((line = br.readLine()) != null){
+            while ((line = br.readLine()) != null) {
                 out.println(line);
             }
+        } catch (FileNotFoundException e) {
+            out.println(localizedMainExec.FILENOTFOUND);
         }
-        catch(FileNotFoundException e){
-            out.println(localizedMainExec.fileNotFound);
-        }
-        //univObjs.nextLine(); isa confused
+
     }
 }
 
 class bluej {
-    private bluej(){}
-    static void main() throws IOException{
+    private bluej() {
+    }
+
+    static void main() throws IOException {
         univObjs univObjs = new univObjs(2);
-        try(BufferedReader br = new BufferedReader(new FileReader("Welcome.txt"))){
+        try (BufferedReader br = new BufferedReader(new FileReader("Welcome.txt"))) {
             String line;
-            while((line = br.readLine()) != null){
+            while ((line = br.readLine()) != null) {
                 out.println(line);
             }
+        } catch (FileNotFoundException e) {
+            out.println(localizedMainExec.FILENOTFOUND);
         }
-        catch(FileNotFoundException e){
-            out.println(localizedMainExec.fileNotFound);
-        }
-        //univObjs.nextLine(); isa confused
+        // univObjs.nextLine(); isa confused
     }
 }

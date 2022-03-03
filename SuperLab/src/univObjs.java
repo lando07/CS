@@ -6,9 +6,20 @@ import static java.lang.System.in;
 public class univObjs {
     private int osParam;
     private static Scanner console = new Scanner(in);
+    private static univObjs objs;
 
     public univObjs(int os) {
         osParam = os;
+    }
+
+    private univObjs() {
+    }
+
+    public static univObjs getInstance() {
+        if (objs == null)
+            objs = new univObjs();
+        return objs;
+
     }
 
     public void clear() throws Exception {
@@ -21,5 +32,4 @@ public class univObjs {
                 out.print('\u000c');
         }
     }
-
 }
