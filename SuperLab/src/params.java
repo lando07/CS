@@ -1,9 +1,24 @@
-public class params {
+public class params implements AutoCloseable{
     private static params params;
     private boolean stillExploring = true;
-    private int osNum;
-
+    private int labNum;
+    
     private params() {
+    }
+
+    private boolean getStillExploring(){
+        return stillExploring;
+    }
+    private void setStillExploring(boolean newState){
+        stillExploring = newState;
+    }
+
+    private int getLabNum(){
+        return labNum;
+    }
+
+    private void setLabNum(int newState){
+        labNum = newState;
     }
 
     public static params getInstance() {
@@ -12,5 +27,8 @@ public class params {
             return params;
         } else
             return params;
+    }
+    public void close(){
+        params = null;
     }
 }

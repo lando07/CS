@@ -4,14 +4,15 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class localizedMainExec {
-    public static final String FILENOTFOUND = "Oops! File not found, make sure all text files are present!";
+    static final String FILENOTFOUND = "Oops! File not found, make sure all text files are present!";
 
     private localizedMainExec() {
     }
 
-    public static void localizer(int os) throws IOException {
+    public static void localizer(int os) throws IOException, InterruptedException{
         switch (os) {
             case 0:
                 linux.main();
@@ -27,9 +28,9 @@ class linux {
     private linux() {
     }
 
-    static void main() throws IOException {
-        univObjs clearObj = new univObjs(0);
-        univObjs objs = univObjs.getInstance();
+    static void main() throws IOException, InterruptedException {
+        UnivObjs clearObj = new UnivObjs(0);
+        Scanner console = UnivObjs.getScanner();
         try (BufferedReader br = new BufferedReader(new FileReader("Welcome.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
@@ -38,7 +39,18 @@ class linux {
         } catch (FileNotFoundException e) {
             out.println(localizedMainExec.FILENOTFOUND);
         }
-        // TODO make get instance classes for scanner and random number generator
+        console.nextLine();
+        clearObj.clear();
+        try(BufferedReader br = new BufferedReader(new FileReader("Options.txt"))){
+            String line;
+            while((line = br.readLine()) != null){
+                out.println(line);
+            }
+        }
+        try(params controlParams = params.getInstance()){
+            
+        }
+
     }
 }
 
@@ -47,7 +59,7 @@ class win {
     }
 
     static void main() throws IOException {
-        univObjs univObjs = new univObjs(1);
+        UnivObjs univObjs = new UnivObjs(1);
         try (BufferedReader br = new BufferedReader(new FileReader("Welcome.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
@@ -65,7 +77,7 @@ class bluej {
     }
 
     static void main() throws IOException {
-        univObjs univObjs = new univObjs(2);
+        UnivObjs univObjs = new UnivObjs(2);
         try (BufferedReader br = new BufferedReader(new FileReader("Welcome.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {

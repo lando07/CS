@@ -1,28 +1,31 @@
+import static java.lang.System.in;
 import static java.lang.System.out;
 
+import java.io.IOException;
+import java.util.Random;
 import java.util.Scanner;
-import static java.lang.System.in;
 
-public class univObjs {
+public class UnivObjs {
     private int osParam;
     private static Scanner console = new Scanner(in);
-    private static univObjs objs;
+    private static Random rand = new Random();
 
-    public univObjs(int os) {
+    public UnivObjs(int os) {
         osParam = os;
     }
 
-    private univObjs() {
+    public static Scanner getScanner() {
+        return console;
     }
 
-    public static univObjs getInstance() {
-        if (objs == null)
-            objs = new univObjs();
-        return objs;
-
+    public static Random getRandom() {
+        return rand;
     }
 
-    public void clear() throws Exception {
+    private UnivObjs() {
+    }
+
+    public void clear() throws InterruptedException, IOException {
         switch (osParam) {
             case 0: // linux/unix systems
                 out.print("\033[H\033[2J");

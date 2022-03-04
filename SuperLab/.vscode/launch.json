@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Superlab",
+            "request": "launch",
+            "mainClass": "Superlab",
+            "projectName": "SuperLab_cabffe5f"
+        },
+        {
+            "type": "java",
             "name": "Launch MainExec",
             "request": "launch",
             "mainClass": "MainExec",

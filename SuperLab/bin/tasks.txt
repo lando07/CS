@@ -1,7 +1,0 @@
-1. Get mainExec finished
-2. get the condition-specific Execs coded with their localizations
-3. Get interface built
-4. Improve security and make good class design(like encapsulation)
-5. Export all jar file with mainExec being the main file
-6. Get additional labs appended into the execs as I finish them
-7. Maybe add Practice Problems to them???
