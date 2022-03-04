@@ -29,10 +29,15 @@ public class UnivObjs {
         switch (osParam) {
             case 0: // linux/unix systems
                 out.print("\033[H\033[2J");
+                return;
             case 1:// windows systems with dos or powershell
                 new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+                return;
             case 2:// bluej clear console character
                 out.print('\u000c');
+                return;
+            default:
+                out.println("(Screen clears)\n");
         }
     }
 }

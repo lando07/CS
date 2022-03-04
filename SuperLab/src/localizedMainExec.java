@@ -48,7 +48,7 @@ class linux {
             }
         }
         try(params controlParams = params.getInstance()){
-            
+            controlParams.setLabNum(console.nextInt());
         }
 
     }
