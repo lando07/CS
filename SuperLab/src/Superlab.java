@@ -3,13 +3,24 @@ import java.io.IOException;
 public class Superlab {
     public static void main(String[] args) throws IOException, InterruptedException {
         String osStr = System.getProperty("os.name").toLowerCase();
-        if (System.console() != null) {
-            if (osStr.contains("windows"))
-                localizedMainExec.localizer(1);
-            else
-                localizedMainExec.localizer(0);
-        } else {
-            localizedMainExec.localizer(2);
+        try (params inputParams = params.getInstance()) {
+            int osParam;
+            if (System.console() != null) {
+                if (osStr.contains("windows")) {
+                    osParam = 1;
+                    inputParams.setOsNum(osParam);
+                    localizedMainExec.localizer(osParam);
+                } else {
+                    osParam = 0;
+                    inputParams.setOsNum(osParam);
+                    localizedMainExec.localizer(osParam);
+
+                }
+            } else {
+                osParam = 2;
+                inputParams.setOsNum(osParam);
+                localizedMainExec.localizer(osParam);
+            }
         }
     }
 }

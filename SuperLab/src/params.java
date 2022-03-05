@@ -1,23 +1,42 @@
-public class params implements AutoCloseable{
+public class params implements AutoCloseable {
     private static params params;
     private boolean stillExploring = true;
     private int labNum;
-    
+    private char AorB;
+    private int os;
+
     private params() {
     }
 
-    boolean getStillExploring(){
+    boolean getStillExploring() {
         return stillExploring;
     }
-    void setStillExploring(boolean newState){
-        stillExploring = newState;
+
+    char getAorB() {
+        return AorB;
     }
 
-    int getLabNum(){
+    int getLabNum() {
         return labNum;
     }
 
-    void setLabNum(int newState){
+    int getOsNum() {
+        return os;
+    }
+
+    void setOsNum(int osParam) {
+        os = osParam;
+    }
+
+    void setStillExploring(boolean newState) {
+        stillExploring = newState;
+    }
+
+    void setAorB(char newState) {
+        AorB = newState;
+    }
+
+    void setLabNum(int newState) {
         labNum = newState;
     }
 
@@ -28,7 +47,8 @@ public class params implements AutoCloseable{
         } else
             return params;
     }
-    public void close(){
+
+    public void close() {
         params = null;
     }
 }

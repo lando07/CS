@@ -5,7 +5,7 @@ public class Lab12GuessingGame {
     private Lab12GuessingGame() {
     }
 
-    public static void Lab12() throws Exception {
+    public static void Lab12() {
         try (Scanner console = UnivObjs.getScanner()) {
             int upperbound = 1000; // Numbers less than 101 will work but NOT equal to 101
             // int randNum = rand.nextInt(upperbound); //gives us our random number

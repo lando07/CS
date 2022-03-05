@@ -39,8 +39,9 @@ public class Lab15 {
             out.println("Goodbye");
         }
     }
-//TODO fix lab 15 PNC
-    public static void Lab15PNC() throws Exception {
+
+    // TODO fix lab 15 PNC
+    public static void Lab15PNC() {
         refs = getInstance();
         int checkOrNoCheck;
         if (console() != null) {

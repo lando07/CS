@@ -5,7 +5,7 @@ public class Lab17Pendulum {
     private Lab17Pendulum() {
     }
 
-    public static void Lab17() throws Exception {
+    public static void Lab17() {
         try (Scanner console = UnivObjs.getScanner()) {
             boolean keepCal = true;
             do {

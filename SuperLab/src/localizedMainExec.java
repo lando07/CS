@@ -12,7 +12,7 @@ public class localizedMainExec {
     private localizedMainExec() {
     }
 
-    public static void localizer(int os) throws IOException, InterruptedException{
+    public static void localizer(int os) throws IOException, InterruptedException {
         switch (os) {
             case 0:
                 linux.main();
@@ -29,7 +29,7 @@ class linux {
     }
 
     static void main() throws IOException, InterruptedException {
-        UnivObjs clearObj = new UnivObjs(0);
+        UnivObjs clearObj = new UnivObjs();
         Scanner console = UnivObjs.getScanner();
         try (BufferedReader br = new BufferedReader(new FileReader("Welcome.txt"))) {
             String line;
@@ -41,13 +41,13 @@ class linux {
         }
         console.nextLine();
         clearObj.clear();
-        try(BufferedReader br = new BufferedReader(new FileReader("Options.txt"))){
+        try (BufferedReader br = new BufferedReader(new FileReader("Options.txt"))) {
             String line;
-            while((line = br.readLine()) != null){
+            while ((line = br.readLine()) != null) {
                 out.println(line);
             }
         }
-        try(params controlParams = params.getInstance()){
+        try (params controlParams = params.getInstance()) {
             controlParams.setLabNum(console.nextInt());
         }
 
@@ -59,7 +59,7 @@ class win {
     }
 
     static void main() throws IOException {
-        UnivObjs univObjs = new UnivObjs(1);
+        UnivObjs univObjs = new UnivObjs();
         try (BufferedReader br = new BufferedReader(new FileReader("Welcome.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
@@ -77,7 +77,7 @@ class bluej {
     }
 
     static void main() throws IOException {
-        UnivObjs univObjs = new UnivObjs(2);
+        UnivObjs univObjs = new UnivObjs();
         try (BufferedReader br = new BufferedReader(new FileReader("Welcome.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {

@@ -1,11 +1,19 @@
-public class labCaller {
-    int opt;
+import static java.lang.System.out;
 
-    public labCaller(int inputOpt) {
-        opt = inputOpt;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class labCaller {
+    private int opt;
+
+    public labCaller() {
+        opt = params.getInstance().getLabNum();
+        labsIndex();
     }
 
-    public void labsIndex() throws Exception {
+    private void labsIndex() {
         switch (opt) {
             case 0:
                 Lab00MyFirstProgram.Lab00();
@@ -50,7 +58,12 @@ public class labCaller {
                 Lab14FullBlackjack.Lab14();
                 return;
             case 15:
-                lab15.lab15Caller();
+                try {
+                    lab15.lab15Caller();
+                } catch (IOException e) {
+                    out.println("io exception found:\n");
+                    e.printStackTrace();
+                }
                 return;
             case 16:
                 Lab16LuckyDice.Lab16();
@@ -76,12 +89,39 @@ public class labCaller {
             case 23:
                 // TODO get lab 23 imported
                 return;
+            default:
+                out.println("Invalid option.");
         }
     }
 
     private class lab15 {
-        static void lab15Caller() {
-
+        static void lab15Caller() throws IOException {
+            try (BufferedReader br = new BufferedReader(new FileReader("AorB.txt"))) {
+                String line;
+                while ((line = br.readLine()) != null)
+                    out.println(line);
+            }
+            try (Scanner console = UnivObjs.getScanner()) {
+                try (params inputParams = params.getInstance()) {
+                    inputParams.setAorB(console.next().toLowerCase().charAt(0));
+                    try (UnivObjs obj = new UnivObjs()) {
+                        switch (inputParams.getAorB()) {
+                            case 'a':
+                                Lab15.Lab15PrimChec();
+                                return;
+                            case 'b':
+                                Lab15.Lab15PNC();
+                                return;
+                            default:
+                                out.println("invalid choice");
+                        }
+                        obj.clear();
+                    } catch (InterruptedException e) {
+                        out.println("InterruptedException found:\n");
+                        e.printStackTrace();
+                    }
+                }
+            }
         }
     }
 }
