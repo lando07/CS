@@ -5,7 +5,8 @@ public class Lab08NutsAndBolts {
     }
 
     public static void Lab08() {
-        try (Scanner console = UnivObjs.getScanner()) {
+        try {
+            Scanner console = UnivObjs.getScanner();
             final int BOLTPRICE, NUTPRICE, WASHERPRICE;
             boolean nutsMoreThanBolts = false;
             boolean doubleWasherMoreThanBolts = false;
@@ -43,6 +44,7 @@ public class Lab08NutsAndBolts {
             }
             price = (bolts * BOLTPRICE) + (nuts * NUTPRICE) + (washers * WASHERPRICE);
             System.out.println("Total cost (in cents) >>> " + price);
+        } finally {
         }
     }
 }

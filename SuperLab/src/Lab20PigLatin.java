@@ -7,7 +7,9 @@ public class Lab20PigLatin {
 
     public static void Lab20() {
         String stringInput = "";
-        try (Scanner console = UnivObjs.getScanner()) {
+        try {
+            Scanner console = UnivObjs.getScanner();
+            console.nextLine();
             // rules of pig latin:
             // move all leading consonants to end and add ay
             // if starts with a vowel add hay to the end, (y is not a vowel here)
@@ -22,6 +24,7 @@ public class Lab20PigLatin {
                 }
             }
             out.println("Bye!");
+        } finally {
         }
     }
 }

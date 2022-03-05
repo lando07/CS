@@ -7,7 +7,8 @@ public class Lab13HailstoneSeries {
     }
 
     public static void Lab13() {
-        try (Scanner console = UnivObjs.getScanner()) {
+        try {
+            Scanner console = UnivObjs.getScanner();
             long num, i = 0;
             out.print("Enter an integer from 1 to 1000 >>> ");
             num = console.nextLong();
@@ -24,6 +25,7 @@ public class Lab13HailstoneSeries {
                 out.println("Series took " + i + " steps to reach a value of 1");
             } else
                 out.println("integer overflow");
+        } finally {
         }
     }
 }

@@ -6,7 +6,8 @@ public class Lab17Pendulum {
     }
 
     public static void Lab17() {
-        try (Scanner console = UnivObjs.getScanner()) {
+        try {
+            Scanner console = UnivObjs.getScanner();
             boolean keepCal = true;
             do {
                 out.print("Enter pendulum length in meters (or 0 to quit) >>> ");
@@ -19,6 +20,7 @@ public class Lab17Pendulum {
                 out.println("For a length of " + length + "m, the pendulum's period is " + period + " seconds.\n");
             } while (keepCal);
             out.println("Goodbye.");
+        } finally {
         }
     }
 }

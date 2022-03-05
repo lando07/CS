@@ -10,7 +10,8 @@ public class Lab15 {
     }
 
     public static void Lab15PrimChec() {
-        try (Scanner console = UnivObjs.getScanner()) {
+        try {
+            Scanner console = UnivObjs.getScanner();
             int checkOrNoCheck;
             out.print("Enter 1 to check if a number is prime or 2 to exit >>> ");
             checkOrNoCheck = console.nextInt();
@@ -37,53 +38,47 @@ public class Lab15 {
                 }
             }
             out.println("Goodbye");
+        } finally {
         }
     }
 
     // TODO fix lab 15 PNC
     public static void Lab15PNC() {
-        refs = getInstance();
-        int checkOrNoCheck;
-        if (console() != null) {
-            String os = getProperty("os.name").toLowerCase();
-            if (os.contains("windows")) {
-                refs.cls();
-            } else {
-                // run for other os' besides windows
-                refs.termClear();
-            }
-        } else {
-            refs.bluejClear();
-        }
-        out.print("Enter 1 to check if a number is prime or 2 to exit >>> ");
-        checkOrNoCheck = console.nextInt();
-        long primeCounter = 0;
-        while (checkOrNoCheck == 1) {
-            if (checkOrNoCheck == 1) {
-                out.print("Please enter an integer to check >>> ");
-                long integer = console.nextLong();
-                double start = System.currentTimeMillis();
-                primeCounter = 0;
-                for (long i = 1; i <= integer; i++) {
-                    boolean prime = true;
-                    double sqRT = sqrt(i);
-                    for (long e = 2; e <= sqRT + 1; e++) {
-                        if (i % e == 0) {
-                            prime = false;
-                            break;
+        try (Scanner console = UnivObjs.getScanner()) {
+            int checkOrNoCheck;
+            try (UnivObjs refs = new UnivObjs()) {
+                out.print("Enter 1 to check if a number is prime or 2 to exit >>> ");
+                checkOrNoCheck = console.nextInt();
+                long primeCounter = 0;
+                while (checkOrNoCheck == 1) {
+                    if (checkOrNoCheck == 1) {
+                        out.print("Please enter an integer to check >>> ");
+                        long integer = console.nextLong();
+                        double start = System.currentTimeMillis();
+                        primeCounter = 0;
+                        for (long i = 1; i <= integer; i++) {
+                            boolean prime = true;
+                            double sqRT = sqrt(i);
+                            for (long e = 2; e <= sqRT + 1; e++) {
+                                if (i % e == 0) {
+                                    prime = false;
+                                    break;
+                                }
+                            }
+                            if (prime)
+                                primeCounter++;
                         }
+                        double end = System.currentTimeMillis();
+                        out.println(
+                                "From 0 to " + integer + ", there is a total of " + primeCounter
+                                        + " prime numbers and it took "
+                                        + (end - start) + " Milliseconds or " + (end - start) / 1000 + " seconds.");
                     }
-                    if (prime)
-                        primeCounter++;
+                    out.print("Enter 1 to check if a number is prime or 2 to exit >>> ");
+                    checkOrNoCheck = console.nextInt();
                 }
-                double end = System.currentTimeMillis();
-                out.println(
-                        "From 0 to " + integer + ", there is a total of " + primeCounter + " prime numbers and it took "
-                                + (end - start) + " Milliseconds or " + (end - start) / 1000 + " seconds.");
+                out.println("Goodbye");
             }
-            out.print("Enter 1 to check if a number is prime or 2 to exit >>> ");
-            checkOrNoCheck = console.nextInt();
         }
-        out.println("Goodbye");
     }
 }

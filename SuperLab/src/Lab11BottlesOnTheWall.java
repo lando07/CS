@@ -6,7 +6,8 @@ public class Lab11BottlesOnTheWall {
     }
 
     public static void Lab11() {
-        try (Scanner console = UnivObjs.getScanner()) {
+        try {
+            Scanner console = UnivObjs.getScanner();
             boolean overAge21;
             int bottles = 99;
             int age;
@@ -53,6 +54,7 @@ public class Lab11BottlesOnTheWall {
             System.out.println("Take one down, pass it around, no more bottles of " + cokeOrBeer + " on the wall!");
 
             System.out.println();
+        } finally {
         }
     }
 }

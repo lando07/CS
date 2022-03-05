@@ -1,6 +1,6 @@
 public class params implements AutoCloseable {
     private static params params;
-    private boolean stillExploring = true;
+    private static boolean stillExploring = true;
     private int labNum;
     private char AorB;
     private int os;
@@ -28,7 +28,7 @@ public class params implements AutoCloseable {
         os = osParam;
     }
 
-    void setStillExploring(boolean newState) {
+    static void setStillExploring(boolean newState) {
         stillExploring = newState;
     }
 

@@ -5,7 +5,8 @@ public class Lab19NameThatCelebrity {
     public static final String celeb = "Bill Clinton";
 
     public static void Lab19() {
-        try (Scanner console = UnivObjs.getScanner()) {
+        try {
+            Scanner console = UnivObjs.getScanner();
             String clue = "This person was a president not too long ago";
             int triesLeft = 4;
             int difNum = 0;
@@ -56,6 +57,7 @@ public class Lab19NameThatCelebrity {
             }
             if (triesLeft == 0)
                 out.println("You lose! The answer was " + celeb);
+        } finally {
         }
     }
 }

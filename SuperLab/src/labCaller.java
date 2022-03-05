@@ -10,53 +10,52 @@ public class labCaller {
 
     public labCaller() {
         opt = params.getInstance().getLabNum();
-        labsIndex();
     }
 
-    private void labsIndex() {
+    void labsIndex() throws InterruptedException{
         switch (opt) {
             case 0:
                 Lab00MyFirstProgram.Lab00();
-                return;
+                break;
             case 1:
                 Lab01HelloWorld.Lab01();
-                return;
+                break;
             case 2:
                 Lab02NomNomNom.Lab02();
-                return;
+                break;
             case 3:
                 Lab03BigMacWalk.Lab03();
-                return;
+                break;
             case 4:
                 Lab05RoadTrip.Lab05();
-                return;
+                break;
             case 5:
                 Lab06Calculator.Lab06();
-                return;
+                break;
             case 7:
                 Lab07DeadOrAlive.Lab07();
-                return;
+                break;
             case 8:
                 Lab08NutsAndBolts.Lab08();
-                return;
+                break;
             case 9:
                 Lab09Seasons.Lab09();
-                return;
+                break;
             case 10:
                 Lab10BasicBlackjack.Lab10();
-                return;
+                break;
             case 11:
                 Lab11BottlesOnTheWall.Lab11();
-                return;
+                break;
             case 12:
                 Lab12GuessingGame.Lab12();
-                return;
+                break;
             case 13:
                 Lab13HailstoneSeries.Lab13();
-                return;
+                break;
             case 14:
                 Lab14FullBlackjack.Lab14();
-                return;
+                break;
             case 15:
                 try {
                     lab15.lab15Caller();
@@ -64,38 +63,38 @@ public class labCaller {
                     out.println("io exception found:\n");
                     e.printStackTrace();
                 }
-                return;
+                break;
             case 16:
                 Lab16LuckyDice.Lab16();
-                return;
+                break;
             case 17:
                 Lab17Pendulum.Lab17();
-                return;
+                break;
             case 18:
                 Lab18TShirtLauncher.Lab18();
-                return;
+                break;
             case 19:
                 Lab19NameThatCelebrity.Lab19();
-                return;
+                break;
             case 20:
                 Lab20PigLatin.Lab20();
-                return;
+                break;
             case 21:
                 Lab21SimpleHistogram.Lab21();
-                return;
+                break;
             case 22:
                 Lab22ArrayAnalyzer.Lab22();
-                return;
+                break;
             case 23:
                 // TODO get lab 23 imported
-                return;
+                break;
             default:
                 out.println("Invalid option.");
         }
     }
 
     private class lab15 {
-        static void lab15Caller() throws IOException {
+        static void lab15Caller() throws IOException, InterruptedException {
             try (BufferedReader br = new BufferedReader(new FileReader("AorB.txt"))) {
                 String line;
                 while ((line = br.readLine()) != null)
@@ -108,17 +107,14 @@ public class labCaller {
                         switch (inputParams.getAorB()) {
                             case 'a':
                                 Lab15.Lab15PrimChec();
-                                return;
+                                break;
                             case 'b':
                                 Lab15.Lab15PNC();
-                                return;
+                                break;
                             default:
                                 out.println("invalid choice");
                         }
                         obj.clear();
-                    } catch (InterruptedException e) {
-                        out.println("InterruptedException found:\n");
-                        e.printStackTrace();
                     }
                 }
             }

@@ -9,6 +9,13 @@
             "name": "Launch Superlab",
             "request": "launch",
             "mainClass": "Superlab",
+            "projectName": "SuperLab_c6f4eb0f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Superlab",
+            "request": "launch",
+            "mainClass": "Superlab",
             "projectName": "SuperLab_cabffe5f"
         },
         {

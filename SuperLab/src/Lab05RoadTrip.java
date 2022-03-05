@@ -7,7 +7,8 @@ public class Lab05RoadTrip {
     }
 
     public static void Lab05() {
-        try (Scanner console = UnivObjs.getScanner()) {
+        try {
+            Scanner console = UnivObjs.getScanner();
             System.out.println("Please enter information for my calculations.");
             System.out.print("Fuel economy >>> ");
             double fuelEconomy = console.nextDouble();
@@ -27,6 +28,7 @@ public class Lab05RoadTrip {
             System.out.println("Gallons of gas used >>> " + (tripMiles / fuelEconomy));
             System.out.println("Total cost of gas >>> $" + ((tripMiles / fuelEconomy) * avgPriceOfGas));
             System.out.println("Total driving hours >>> " + (tripMiles / averageSpeed));
+        } finally {
         }
     }
 }

@@ -5,7 +5,8 @@ public class Lab10BasicBlackjack {
     }
 
     public static void Lab10() {
-        try (Scanner console = UnivObjs.getScanner()) {
+        try {
+            Scanner console = UnivObjs.getScanner();
             int player1Hand, player2Hand;
             boolean badNumber = false, badHandP1 = false, badHandP2 = false, handsBust = false;
             System.out.print("Player 1, enter hand value >>> ");
@@ -43,6 +44,7 @@ public class Lab10BasicBlackjack {
             } else {
                 System.out.println("You entered bad numbers.");
             }
+        } finally {
         }
     }
 }

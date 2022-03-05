@@ -6,7 +6,8 @@ public class Lab09Seasons {
     }
 
     public static void Lab09() {
-        try (Scanner console = UnivObjs.getScanner()) {
+        try {
+            Scanner console = UnivObjs.getScanner();
             int month;
             int day;
             System.out.print("Enter month as integer >>> ");
@@ -31,6 +32,7 @@ public class Lab09Seasons {
                     System.out.println("Season: Fall");
                 }
             }
+        } finally {
         }
     }
 }

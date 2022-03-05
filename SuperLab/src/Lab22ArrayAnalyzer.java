@@ -6,7 +6,8 @@ public class Lab22ArrayAnalyzer {
     }
 
     public static void Lab22() {
-        try (Scanner console = UnivObjs.getScanner()) {
+        try {
+            Scanner console = UnivObjs.getScanner();
             double[] inputArr;
             out.print("How many numbers will you enter? >>> ");
             inputArr = new double[console.nextInt()];
@@ -36,6 +37,7 @@ public class Lab22ArrayAnalyzer {
             for (int i = decRunParams[0]; i <= decRunParams[1]; i++) {
                 out.print(inputArr[i] + " ");
             }
+        } finally {
         }
     }
 }

@@ -7,7 +7,8 @@ public class Lab06Calculator {
     }
 
     public static void Lab06() {
-        try (Scanner console = UnivObjs.getScanner()) {
+        try {
+            Scanner console = UnivObjs.getScanner();
             double num1;
             double num2;
             double endResult;
@@ -45,6 +46,7 @@ public class Lab06Calculator {
                 endResult = num1 % num2;
                 System.out.println(num1 + " % " + num2 + " = " + endResult);
             }
+        } finally {
         }
     }
 }

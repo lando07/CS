@@ -9,17 +9,17 @@ public class Superlab {
                 if (osStr.contains("windows")) {
                     osParam = 1;
                     inputParams.setOsNum(osParam);
-                    localizedMainExec.localizer(osParam);
+                    localizedMainExec.localizer();
                 } else {
                     osParam = 0;
                     inputParams.setOsNum(osParam);
-                    localizedMainExec.localizer(osParam);
+                    localizedMainExec.localizer();
 
                 }
             } else {
                 osParam = 2;
                 inputParams.setOsNum(osParam);
-                localizedMainExec.localizer(osParam);
+                localizedMainExec.localizer();
             }
         }
     }

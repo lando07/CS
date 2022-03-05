@@ -13,7 +13,8 @@ public class Lab18TShirtLauncher {
     }
 
     public static void Lab18() {
-        try (Scanner console = UnivObjs.getScanner()) {
+        try {
+            Scanner console = UnivObjs.getScanner();
             final double GRAV = 9.8;
             out.print("Enter launch velocity (m/s) >>> ");
             double velocity = console.nextDouble();
@@ -37,6 +38,7 @@ public class Lab18TShirtLauncher {
                 sec++;
             }
             console.nextLine();
+        } finally {
         }
     }
 }
