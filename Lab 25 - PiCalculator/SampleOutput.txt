@@ -1,0 +1,55 @@
+************************************************************
+* YOUR PRACTICE PROBLEM OUTPUT SHOULD LOOK JUST LIKE THIS! *
+************************************************************
+
+5 is Odd? >>> true
+6 is Odd? >>> false
+
+15 is a single digit? >>> false
+-7 is a single digit? >>> true
+
+Max between 100 and 200? >>> 200
+Max between -3 and 4? >>> 4
+
+Random Roll >>> 6
+Random Roll >>> 2
+
+Random Roll (20 faces) >>> 16
+Random Roll (1000 faces) >>> 933
+
+Caps fixing frEd >>> Fred
+Caps fixing sAlSA >>> Salsa
+
+Area of cicle with radius 1.0? >>> 3.141592653589793
+Area of cicle with radius 8.5? >>> 226.98006922186258
+
+35 is a multiple of 5? >>> true
+31 is a multiple of 3? >>> false
+
+5 is prime? >>> true
+33 is prime? >>> false
+2 is prime? >>> true
+301 is prime? >>> false
+307 is prime? >>> true
+
+Printing pig as diagonal
+p
+ i
+  g
+Printing salsa as diagonal
+s
+ a
+  l
+   s
+    a
+
+************************************************
+* YOUR APP OUTPUT SHOULD LOOK SIMILAR TO THIS! *
+************************************************
+Series of 3 >>> 3.466666666666667
+Series of 100 >>> 3.1315929035585537
+Series of 5000 >>> 3.141392653591791
+
+
+
+
