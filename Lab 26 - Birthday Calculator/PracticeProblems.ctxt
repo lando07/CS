@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=PracticeProblems
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment10.params=a\ b
+comment10.target=boolean\ contains(int[],\ int[])
+comment2.params=grade
+comment2.target=java.lang.String\ letterGrade(double)
+comment3.params=size
+comment3.target=void\ squareBoard(int)
+comment4.params=size
+comment4.target=void\ checkerBoard(int)
+comment5.params=pow
+comment5.target=void\ printPow2(int)
+comment6.params=a\ b\ c
+comment6.target=double[]\ quad(double,\ double,\ double)
+comment7.params=temp\ isF
+comment7.target=double\ convertTemp(double,\ boolean)
+comment8.params=nums\ value
+comment8.target=int\ simpleSearch(int[],\ int)
+comment9.params=num
+comment9.target=int\ printReverse(int)
+numComments=11

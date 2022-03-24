@@ -1,0 +1,58 @@
+************************************************************
+* YOUR PRACTICE PROBLEM OUTPUT SHOULD LOOK JUST LIKE THIS! *
+************************************************************
+
+Grade of 80 is a B
+Grade of 62.3 is a F
+Grade of 105 is a A
+
+Printing a size 2 square
+# # 
+# # 
+Printing a size 3 square
+# # # 
+# # # 
+# # # 
+
+Printing a size 3 checkerboard
+# # # 
+ # # # 
+# # # 
+
+Here are the first 2 powers of 2
+2^0 = 1
+2^1 = 2
+Here are the first 3 powers of 2
+2^0 = 1
+2^1 = 2
+2^2 = 4
+
+Roots using 1.0, 2.0, 1.0: [-1.0, -1.0]
+Roots using 1.0, 1.0, -4.0: [1.5615528128088303, -2.5615528128088303]
+Roots using 1.0, -2.0, -4.0: [3.23606797749979, -1.2360679774997898]
+
+Converting 24.2 C to F: 75.56
+Converting 86 F to C: 30.0
+
+My array is [7, 6, 9, 4, 3, 7, 2]
+Searching for 7.  Location: 0
+Searching for 3.  Location: 4
+Searching for 5.  Location: -1
+
+Print 123 in reverse: 321
+Print 3674 in reverse: 4763
+
+Is [1, 2, 3] found in [1, 2, 1, 2, 3]? true
+Is [1, 2, 3, 4] found in [1, 2, 1, 2, 3]? false
+
+************************************************
+* YOUR APP OUTPUT SHOULD LOOK SIMILAR TO THIS! *
+************************************************
+
+What month is it now? >>> 3
+What day is it now? >>> 15
+What month is your birthday? >>> 2
+What day is your birthday? >>> 14
+
+Days until your birthday >>> 336
+
