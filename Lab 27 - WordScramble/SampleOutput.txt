@@ -1,0 +1,41 @@
+************************************************************
+* YOUR PRACTICE PROBLEM OUTPUT SHOULD LOOK JUST LIKE THIS! *
+************************************************************
+
+'7' is the character 'a'? >>> false
+'a' is the character 'a'? >>> true
+'F' is the character 'a'? >>> false
+
+"apple" has at least 2 'a's? >>> false
+"Some teachers eat apples." has at least 2 'a's? >>> true
+
+'u' is a vowel? >>> true
+'b' is a vowel? >>> false
+'I' is a vowel? >>> true
+
+Vowel count in "salsa" >>> 2
+Vowel count in "The best teachers eat salsa." >>> 9
+
+The word "salsa" has the same number of 'a' and 's'? >>> true
+The word "salsa" has the same number of 'a' and 'f'? >>> false
+
+The word "programmer" has a repeated 'm'? >>> true
+The word "programmer" has a repeated 'r'? >>> false
+
+Capitalizing 'm' gives you >>> M
+Capitalizing 'W' gives you >>> W
+
+Capitalizing vowels in "salsa" gives you >>> sAlsA
+Capitalizing vowels in "SCRUMPTIOUS" gives you >>> scrUmptIOUs
+
+************************************************
+* YOUR APP OUTPUT SHOULD LOOK SIMILAR TO THIS! *
+************************************************
+
+Type a word, sentence, or entire paragraph followed by enter.
+What's going to happen when I scramble this sentence?
+
+Here is a scrambled version:
+W'ahts ginog to haeppn wehn I srlcabme tihs sentncee? 
+
+

@@ -2,4 +2,8 @@
 comment0.target=BirthdayCalculator
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment2.params=currDay\ currMnth\ bDay\ bMonth
+comment2.target=int\ calcBDay(int,\ int,\ int,\ int)
+comment3.params=currMnth\ bMonth
+comment3.target=int\ mnthCalc(int,\ int)
+numComments=4

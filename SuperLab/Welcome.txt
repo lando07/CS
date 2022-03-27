@@ -1,9 +1,0 @@
-Welcome to the SuperLab!
-This is a custom project I built by myself as a way to showcase all my projects in one file.
-In order to interact, just follow the instructions in each of the labs. 
-Once you finish the lab, you'll be brought back to the selection screen to either exit or look at another lab.
-Some labs, like the earliest ones do not have any input required, so keep that in mind.
-
-Hope you enjoy!
-
-Press ENTER to go to the selection screen...

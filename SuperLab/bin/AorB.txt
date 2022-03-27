@@ -1,5 +1,0 @@
-In Lab 15, I made the main project along with an extension.
-Choose which project you want to see:
-
-    A - Prime Checker
-    B - Prime Number Counter
