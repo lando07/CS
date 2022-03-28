@@ -7,8 +7,7 @@ package labs.Lab20;
  * @version (a version number or a date)
  */
 public class pigLatinConverter {
-    public static String convert(String engLang) {
-        final char[] VOWELS = { 'a', 'e', 'i', 'o', 'u' };
+    protected static String convert(String engLang) {
         engLang = engLang.toLowerCase();
         String pigLatinLang;
         int frstVwlIndx;
@@ -22,7 +21,7 @@ public class pigLatinConverter {
         return pigLatinLang;
     }
 
-    public static int findFirstVowelIndex(String word) {
+    protected static int findFirstVowelIndex(String word) {
         for (int i = 0; i < word.length(); i++) {
             switch (word.charAt(i)) {
                 case 'a':
@@ -34,5 +33,8 @@ public class pigLatinConverter {
             }
         }
         return -1;
+    }
+    private pigLatinConverter(){
+
     }
 }

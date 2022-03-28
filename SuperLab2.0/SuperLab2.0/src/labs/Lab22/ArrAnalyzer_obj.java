@@ -17,7 +17,7 @@ public class ArrAnalyzer_obj {
         doubArr = usrArr;
     }
 
-    double getLargestNum() {
+    protected double getLargestNum() {
         double max = 0;
         for (int i = 0; i < doubArr.length - 1; i++) { // finding largest number using Math.max
             if (doubArr.length - i == 1)
@@ -27,7 +27,7 @@ public class ArrAnalyzer_obj {
         return max;
     }
 
-    double getSmallestNum() {
+    protected double getSmallestNum() {
         double min = 1;
         for (int i = 0; i < doubArr.length; i++) { // same as above, but with Math.min
             if (doubArr.length - i == 1)
@@ -37,7 +37,7 @@ public class ArrAnalyzer_obj {
         return min;
     }
 
-    double getAvg() {
+    protected double getAvg() {
         double sum = 0;
         for (int i = 0; i < doubArr.length; i++) { // getting total of all variables
             sum += doubArr[i];
@@ -45,7 +45,7 @@ public class ArrAnalyzer_obj {
         return (double) round((sum / doubArr.length) * 10) / 10;
     }
 
-    int getNumOfEvens() {
+    protected int getNumOfEvens() {
         int evensFound = 0;
         for (int i = 0; i < doubArr.length; i++) { // finding number of evens with modulo
             if ((int) doubArr[i] % 2 == 0)
@@ -54,7 +54,7 @@ public class ArrAnalyzer_obj {
         return evensFound;
     }
 
-    double[] getLongestRepeat() {
+    protected double[] getLongestRepeat() {
         double repeatNum = 0, longestRepeatNum = 0;
         int repeatLength = 0, longestRepeatLength = 0;
         double[] lngstRptAttrib = new double[2];
@@ -82,7 +82,7 @@ public class ArrAnalyzer_obj {
         return lngstRptAttrib;
     }
 
-    int[] getLngstIncRun() {
+    protected int[] getLngstIncRun() {
         int localRunLength = 0, localRunStart = 0, localRunEnd, backupRunStrt = 0;
         int longestRunLength = 0, longestRunStart, longestRunEnd;
         int startOfRun = 0, endOfRun = 0, runParams[];
@@ -118,7 +118,7 @@ public class ArrAnalyzer_obj {
         return runParams;
     }
 
-    int[] getLngstDecRun() {
+    protected int[] getLngstDecRun() {
         int localRunLength = 0, localRunStart = 0, localRunEnd, backupRunStrt = 0;
         int longestRunLength = 0, longestRunStart, longestRunEnd;
         int startOfRun = 0, endOfRun = 0, runParams[];

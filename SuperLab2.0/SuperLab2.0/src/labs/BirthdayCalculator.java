@@ -1,14 +1,16 @@
 package labs;
 
 import static java.lang.System.out;
-import static java.lang.System.in;
+
 import java.util.Scanner;
 //Name: 
 
+import control.objs;
+
 public class BirthdayCalculator {
 
-    public static void main(String[] args) {
-        try (Scanner console = new Scanner(in)) {
+    protected static void bDayCalculator() {
+        try (Scanner console = objs.getScanner()) {
             out.print("What month is it now? >>> ");
             int tmpMnth = console.nextInt();
             out.print("What day is it now? >>> ");
@@ -23,7 +25,7 @@ public class BirthdayCalculator {
         }
     }
 
-    public static int calcBDay(int currDay, int currMnth, int bDay, int bMonth) {
+    protected static int calcBDay(int currDay, int currMnth, int bDay, int bMonth) {
         int days = 0;
         if (bMonth == 3 && currMnth == 2) {
             days += 28 - currDay;
@@ -76,5 +78,9 @@ public class BirthdayCalculator {
             daysTotal += ((totalMonths - 1) / 2) * 31 + 31;
             return daysTotal;
         }
+    }
+
+    private BirthdayCalculator() {
+
     }
 }
