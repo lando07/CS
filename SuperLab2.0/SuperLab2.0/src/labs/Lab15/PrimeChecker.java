@@ -1,32 +1,34 @@
-import java.util.*;
-import static java.lang.System.*;
-import static java.lang.Math.*;
-//Name: 
+package labs.Lab15;
 
-public class PrimeChecker
-{
-    public static void main(String[] args)
-    {
-        Scanner console  = new Scanner(in);
+//Name: 
+import static java.lang.Math.sqrt;
+import static java.lang.System.in;
+import static java.lang.System.out;
+
+import java.util.Scanner;
+
+public class PrimeChecker {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(in);
         int checkOrNoCheck;
         out.print("Enter 1 to check if a number is prime or 2 to exit >>> ");
         checkOrNoCheck = console.nextInt();
-        while(checkOrNoCheck == 1){
-            if(checkOrNoCheck == 1){
+        while (checkOrNoCheck == 1) {
+            if (checkOrNoCheck == 1) {
                 out.print("Please enter an integer to check >>> ");
                 long integer = console.nextInt();
                 boolean prime = true;
                 double sqRT = sqrt(integer);
-                for (long i = 2; i <sqRT+1; i++){
-                    if(integer%i == 0){
+                for (long i = 2; i < sqRT + 1; i++) {
+                    if (integer % i == 0) {
                         prime = false;
                         break;
                     }
                 }
-                if(prime)
+                if (prime)
                     out.println(integer + " is a prime number\n");
 
-                else{
+                else {
                     out.println(integer + " is NOT a prime number\n");
                 }
                 out.print("Enter 1 to check if a number is prime or 2 to exit >>> ");

@@ -1,13 +1,15 @@
-import static java.lang.System.*;
-import static java.lang.Math.*;
-import java.util.*;
-//Name: 
+package labs;
 
-public class NameThatCelebrity
-{
+import static java.lang.System.in;
+import static java.lang.System.out;
+
+//Name: 
+import java.util.Scanner;
+
+public class NameThatCelebrity {
     public static String celeb = "Bill Clinton";
-    public static void main(String[] args)
-    {
+
+    public static void main(String[] args) {
         String clue = "This person was a president not too long ago";
         boolean guessedIt = false;
         Scanner console = new Scanner(in);
@@ -17,7 +19,7 @@ public class NameThatCelebrity
         String diff = console.nextLine();
         diff = diff.toLowerCase();
         String brokCeleb;
-        if(diff.contains("easy"))
+        if (diff.contains("easy"))
             difNum = 1;
         else if (diff.contains("medium"))
             difNum = 2;
@@ -26,42 +28,39 @@ public class NameThatCelebrity
         else
             out.println("Invalid difficulty, rerun with the right spelling and word");
         if (difNum == 1)
-            brokCeleb = celeb.substring(0,3) + celeb.substring(7);
+            brokCeleb = celeb.substring(0, 3) + celeb.substring(7);
         else if (difNum == 2)
-            brokCeleb = celeb.substring(0,0) + celeb.substring(2,6) + celeb.substring(9);
-        else if (difNum == 3){
-            brokCeleb = celeb.substring(0,1);
-            brokCeleb += celeb.substring(2,4);
-            brokCeleb += celeb.substring(5,7);
-        }
-        else{
+            brokCeleb = celeb.substring(0, 0) + celeb.substring(2, 6) + celeb.substring(9);
+        else if (difNum == 3) {
+            brokCeleb = celeb.substring(0, 1);
+            brokCeleb += celeb.substring(2, 4);
+            brokCeleb += celeb.substring(5, 7);
+        } else {
             brokCeleb = null;
             triesLeft = 0;
         }
         out.println("\nGood choice. Here's your clue: \n\n>>> " + brokCeleb + "\n");
-        while (triesLeft >0)
-        {
+        while (triesLeft > 0) {
             out.print("What's your guess? >>> ");
             String ans = console.nextLine();
 
-            if(ans.equalsIgnoreCase(celeb)){
-                if(triesLeft >= 1){
+            if (ans.equalsIgnoreCase(celeb)) {
+                if (triesLeft >= 1) {
                     out.println("Correct!! Nice job.");
                 }
                 break;
-            }
-            else
+            } else
                 out.println("Incorrect, sorry!\n");
-            if(triesLeft == 2)
+            if (triesLeft == 2)
                 out.println("Hint: " + clue);
-            if(triesLeft == 1){
-                triesLeft --;
+            if (triesLeft == 1) {
+                triesLeft--;
                 break;
             }
-            out.println(">>> " + brokCeleb+"\n");
+            out.println(">>> " + brokCeleb + "\n");
             triesLeft--;
         }
-        if(triesLeft == 0)
+        if (triesLeft == 0)
             out.println("You lose! The answer was " + celeb);
     }
 }

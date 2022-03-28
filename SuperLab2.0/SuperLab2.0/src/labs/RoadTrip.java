@@ -1,15 +1,13 @@
+package labs;
 
 //Name: 
+import java.util.Scanner;
 
-import java.util.*;
+public class RoadTrip {
 
-public class RoadTrip
-{
-
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
-        
+
         System.out.println("Please enter information for my calculations.");
         System.out.print("Fuel economy >>> ");
         double fuelEconomy = console.nextDouble();
@@ -24,10 +22,10 @@ public class RoadTrip
         double avgPriceOfGas = console.nextDouble();
         console.nextLine();
         System.out.println();
-        
+
         System.out.println("Road trip calculations:");
-        System.out.println("Gallons of gas used >>> " + (tripMiles/fuelEconomy));
-        System.out.println("Total cost of gas >>> $" + ((tripMiles/fuelEconomy)*avgPriceOfGas));
-        System.out.println("Total driving hours >>> " + (tripMiles/averageSpeed));
+        System.out.println("Gallons of gas used >>> " + (tripMiles / fuelEconomy));
+        System.out.println("Total cost of gas >>> $" + ((tripMiles / fuelEconomy) * avgPriceOfGas));
+        System.out.println("Total driving hours >>> " + (tripMiles / averageSpeed));
     }
 }

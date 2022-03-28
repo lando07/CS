@@ -1,5 +1,5 @@
-package objs;
+package control;
 
 public class ControlVars {
-    
+
 }

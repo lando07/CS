@@ -1,7 +1,8 @@
-import java.util.*;
+package labs;
 
-public class NutsAndBolts
-{
+import java.util.Scanner;
+
+public class NutsAndBolts {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         final int BOLTPRICE, NUTPRICE, WASHERPRICE;
@@ -21,25 +22,25 @@ public class NutsAndBolts
         System.out.print("Number of washers >>> ");
         int washers = console.nextInt();
         console.nextLine();
-        if(nuts >= bolts){//the boolean values in the next 2 if statements were set false from the beginning, so nothing else is needed with these.
+        if (nuts >= bolts) {// the boolean values in the next 2 if statements were set false from the
+                            // beginning, so nothing else is needed with these.
             nutsMoreThanBolts = true;
         }
-        if(washers >= bolts*2){
+        if (washers >= bolts * 2) {
             doubleWasherMoreThanBolts = true;
         }
         System.out.println();
-        if(nutsMoreThanBolts == true && doubleWasherMoreThanBolts == true){
+        if (nutsMoreThanBolts == true && doubleWasherMoreThanBolts == true) {
             System.out.println("Order OK!");
-        }
-        else {
-            if (nutsMoreThanBolts == false){
+        } else {
+            if (nutsMoreThanBolts == false) {
                 System.out.println("Warning! Check order: too few nuts");
             }
-            if (doubleWasherMoreThanBolts == false){
+            if (doubleWasherMoreThanBolts == false) {
                 System.out.println("Warning! Check order: too few washers");
             }
         }
-        price = (bolts*BOLTPRICE)+(nuts*NUTPRICE)+(washers*WASHERPRICE);
+        price = (bolts * BOLTPRICE) + (nuts * NUTPRICE) + (washers * WASHERPRICE);
         System.out.println("Total cost (in cents) >>> " + price);
     }
 }

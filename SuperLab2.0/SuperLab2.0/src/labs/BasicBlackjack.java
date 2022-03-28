@@ -1,7 +1,8 @@
-import java.util.*;
+package labs;
 
-public class BasicBlackjack
-{
+import java.util.Scanner;
+
+public class BasicBlackjack {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         int player1Hand, player2Hand;
@@ -12,38 +13,33 @@ public class BasicBlackjack
         System.out.print("Player 2, enter hand value >>> ");
         player2Hand = console.nextInt();
         console.nextLine();
-        if (player1Hand < 0 || player2Hand < 0){
+        if (player1Hand < 0 || player2Hand < 0) {
             badNumber = true;
         }
-        if (player1Hand > 21){
+        if (player1Hand > 21) {
             badHandP1 = true;
         }
-        if (player2Hand > 21){
+        if (player2Hand > 21) {
             badHandP2 = true;
         }
-        if (badHandP1 == true && badHandP2 == true){
+        if (badHandP1 == true && badHandP2 == true) {
             handsBust = true;
         }
-        if (badNumber == false){
-            if (handsBust == false){
-                if (badHandP1 == true){
+        if (badNumber == false) {
+            if (handsBust == false) {
+                if (badHandP1 == true) {
+                    System.out.println("Player 2 wins!");
+                } else if (badHandP2 == true) {
+                    System.out.println("Player 1 wins!");
+                } else if (player1Hand > player2Hand) {
+                    System.out.println("Player 1 wins!");
+                } else if (player1Hand < player2Hand) {
                     System.out.println("Player 2 wins!");
                 }
-                else if (badHandP2 == true){
-                    System.out.println("Player 1 wins!");
-                }
-                else if (player1Hand > player2Hand){
-                    System.out.println("Player 1 wins!");
-                }
-                else if (player1Hand < player2Hand){
-                    System.out.println("Player 2 wins!");
-                }
-            }
-            else {
+            } else {
                 System.out.println("Bust!");
             }
-        }
-        else {
+        } else {
             System.out.println("You entered bad numbers.");
         }
     }

@@ -1,13 +1,12 @@
+package labs;
 
 //Name: 
 
 import java.util.*;
 
-public class Calculator
-{
+public class Calculator {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         double num1;
         double num2;
         double endResult;
@@ -30,23 +29,19 @@ public class Calculator
         System.out.print("Enter second number >>> ");
         num2 = console.nextDouble();
         console.nextLine();
-        if (operator == 1){
+        if (operator == 1) {
             endResult = num1 + num2;
             System.out.println(num1 + " + " + num2 + " = " + endResult);
-        }
-        else if (operator == 2) {
+        } else if (operator == 2) {
             endResult = num1 - num2;
             System.out.println(num1 + " - " + num2 + " = " + endResult);
-        }
-        else if (operator == 3){
+        } else if (operator == 3) {
             endResult = num1 * num2;
             System.out.println(num1 + " * " + num2 + " = " + endResult);
-        }
-        else if (operator == 4){
+        } else if (operator == 4) {
             endResult = num1 / num2;
             System.out.println(num1 + " / " + num2 + " = " + endResult);
-        }
-        else if (operator == 5){
+        } else if (operator == 5) {
             endResult = num1 % num2;
             System.out.println(num1 + " % " + num2 + " = " + endResult);
         }

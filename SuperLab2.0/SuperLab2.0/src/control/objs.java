@@ -1,4 +1,4 @@
-package objs;
+package control;
 
 import static java.lang.System.in;
 
@@ -16,7 +16,7 @@ public class objs {
         return console;
     }
 
-    public static Random getRandom(){
+    public static Random getRandom() {
         return rand;
     }
 

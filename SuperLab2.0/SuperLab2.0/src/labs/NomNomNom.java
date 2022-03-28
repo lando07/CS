@@ -1,11 +1,10 @@
+package labs;
 
 //Name:
 
-public class NomNomNom
-{
+public class NomNomNom {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int cookiesAvailable;
         int cakesAvailable;
         double myHeightInFeet, myWeight;
@@ -43,7 +42,7 @@ public class NomNomNom
         myWeight *= 2;
         System.out.print("My new weight >>> ");
         System.out.println(myWeight);
-        myWeight -=67.7;
+        myWeight -= 67.7;
         System.out.print("Obligitory workout montage. My new weight >>> ");
         System.out.print(myWeight);
         System.out.println("");
