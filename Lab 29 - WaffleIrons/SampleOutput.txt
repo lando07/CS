@@ -1,0 +1,37 @@
+************************************************************
+* YOUR PRACTICE PROBLEM OUTPUT SHOULD LOOK JUST LIKE THIS! *
+************************************************************
+
+Which of the following will declare and initialize a variable in Java? 
+1. int 2a = 4; 
+2. double circle-area = 5.78; 
+3. string s = hello!; 
+4. boolean whoa_now = true; 
+Answer? >>> 3
+Incorrect
+
+Math time!
+Enter first number >>> 5
+Enter second number >>> 3
+Operation? (1)+  (2)-  (3)*  (4)/  (5)%  (6)exp  >>> 4
+The answer is >>> 1.6666666666666667
+
+Making a PB&J sandwich?  Which step are you stuck on? >>> 4
+Here's what you still need to do:
+4) Spoon jelly onto the other piece of bread.
+5) Put bread together so that the peanut butter and jelly are touching.
+6) Give the sandwich to your dog and feast on a much better food. Salsa!
+
+************************************************
+* YOUR APP OUTPUT SHOULD LOOK SIMILAR TO THIS! *
+************************************************
+
+Enter model >>> 4
+Enter quantity >>> 3
+
+Enter model >>> 1
+Enter quantity >>> 6
+
+Enter model >>> -1
+
+Total sales >>> $139.35

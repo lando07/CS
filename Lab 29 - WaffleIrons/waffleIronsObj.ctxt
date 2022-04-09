@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=waffleIronsObj()
+comment1.params=
+comment1.target=double\ getTotal()
+comment2.params=model\ quantity
+comment2.target=void\ calcSales(int,\ int)
+numComments=3
