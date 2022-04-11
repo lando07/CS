@@ -1,0 +1,36 @@
+Options:
+
+Lab 0 - My first program
+Lab 1 - Hello world
+Lab 2 - NomNomNom
+Lab 3 - Big Mac Walk
+Lab 4 - Salary
+Lab 5 - Road Trip
+Lab 6 - Calculator
+Lab 7 - Dead Or Alive
+Lab 8 - Nuts and Bolts
+Lab 9 - Seasons
+Lab 10 - Basic Black Jack
+Lab 11 - Bottles on the Wall
+Lab 12 - Guessing Game
+Lab 13 - Hailstone Series
+Lab 14 - Full BlackJack
+Lab 15 - Prime Checker
+    15A - Prime Checker
+    15B - Prime Number Counter
+Lab 16 - Lucky Dice
+Lab 17 - Pendulum
+Lab 18 - TShirt Launcher
+Lab 19 - Name That Celebrity
+Lab 20 - Pig Latin
+Lab 21 - Simple Histogram
+Lab 22 - Array Analyzer
+Lab 23 - Hangman
+Lab 24 is a lie
+Lab 25 - Pi Calculator
+Lab 26 - Birthday Calculator
+Lab 27 - Word Scramble
+Lab 28 is a lie
+Lab 29 - Waffle Irons
+
+Your Selection >>> 

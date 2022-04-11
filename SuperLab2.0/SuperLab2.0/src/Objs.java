@@ -60,7 +60,8 @@ public class Objs {
             }
         } catch (FileNotFoundException e) {
             out.println("Oops! File not found! Check the that " + file
-                    + "exists in the same directory as the jar or class!");
+                    + " exists in the same directory as the jar or class!");
+            out.println(e);
         }
     }
 
