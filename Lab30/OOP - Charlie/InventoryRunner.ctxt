@@ -2,10 +2,10 @@
 comment0.target=InventoryRunner
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-comment2.params=
-comment2.target=void\ setNewItem()
-comment3.params=
-comment3.target=void\ removeOldItem()
-comment4.params=
-comment4.target=void\ getNetWorth()
+comment2.params=runner\ console
+comment2.target=void\ setNewItem(RunnerObj,\ java.util.Scanner)
+comment3.params=runner\ console
+comment3.target=void\ removeOldItem(RunnerObj,\ java.util.Scanner)
+comment4.params=runner
+comment4.target=void\ getNetWorth(RunnerObj)
 numComments=5
