@@ -13,7 +13,7 @@ public class RunnerObj{
         opt = 0;
         slotNum = 0;
     }
-    
+
     Scanner getScanner(){
         return console;
     }
@@ -52,6 +52,7 @@ public class RunnerObj{
                 "(4) Quit\n"+
                 "What would you like to do (1-4) >>> ");
         opt = console.nextInt();
+        console.nextLine();
     }
 
     void printCurrentInventory(){

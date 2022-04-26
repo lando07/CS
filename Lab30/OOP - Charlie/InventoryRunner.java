@@ -10,7 +10,6 @@ public class InventoryRunner{
                 out.print('\u000c');
                 runner.printCurrentInventory();
                 runner.printOptions();
-                console.nextLine();
                 switch(runner.getOpt()){
                     case 1:
                         setNewItem(runner, console);
@@ -43,6 +42,7 @@ public class InventoryRunner{
             date = console.nextLine();
             out.print("Where in the garage will you store this? (1-3) >>> ");
             runner.setSlotNum(console.nextInt());
+            console.nextLine();
             runner.addItem(desc, cost, date);
         }
         else{
@@ -54,6 +54,7 @@ public class InventoryRunner{
     private static void removeOldItem(RunnerObj runner, Scanner console){
         out.print("Which item did you sell? (1-3) >>> ");
         runner.setSlotNum(console.nextInt());
+        console.nextLine();
         runner.removeItem();
         out.print("Item from spot "+runner.getSlotNum()+" is now gone.");
     }
