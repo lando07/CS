@@ -1,4 +1,5 @@
 import static java.lang.System.in;
+import static java.lang.System.out;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -63,5 +64,27 @@ public class Objs {
         private static boolean stillExploring = true;
         private static int opt;
         private static char subOpt;
+    }
+
+    static void clearScreen() {
+        if (System.console() != null) {
+            if (Objs.getOString().contains("windows")) {
+                try {
+                    new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+                } catch (InterruptedException | IOException e) {
+                    if (e.toString().contains("Interrupt")) {
+                        out.print(e);
+                        Thread.currentThread().interrupt();
+                    } else {
+                        out.print(e);
+                    }
+                }
+            } else {
+                out.print("\033[H\033[2J");
+                out.flush();
+            }
+        } else {
+            out.print("\u000c");
+        }
     }
 }
