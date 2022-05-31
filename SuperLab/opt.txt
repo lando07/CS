@@ -1,0 +1,50 @@
+Here are my labs:
+
+Lab 00 - MyFirstProgram
+Lab 01 - Hello World
+Lab 02 - NomNomNom
+Lab 03 - BigMacWalk
+Lab 04 - Salary
+Lab 05 - Road Trip
+Lab 06 - Calculator
+Lab 07 - Dead or Alive
+Lab 08 - Nuts and Bolts
+Lab 09 - Seasons
+Lab 10 - BasicBlackJack
+Lab 11 - BottlesOnTheWall
+Lab 12 - GuessingGame
+Lab 13 - Hailstone Series
+Lab 14 - FullBlackJack
+Lab 15:
+    15a - PrimeChecker
+    15b - PrimeNumberCounter
+Lab 16 - LuckyDice
+Lab 17 - Pendulum
+Lab 18 - TShirtLauncher
+Lab 19 - NameThatCelebrity
+Lab 20 - PigLatin
+Lab 21 - SimpleHistogram
+Lab 22 - ArrayAnalyzer
+Lab 23:
+    23a - Hangman
+    23b - HangmanDeluxe
+Lab 24 is a lie
+Lab 25 - PiCalculator
+Lab 26 - Birthday Calculator
+Lab 27 - WordScramble
+Lab 29 - WaffleIrons
+Lab 30 OOP:
+    Lab 30Alpha:
+        30A_1 - Rectangle
+        30A_2 - Circle
+        30A_3 - Calculator
+        30A_4 - Bicycle
+    Lab 30Bravo:
+        30B_5 - Boxing
+        30B_6 - Kindness
+    Lab30Charlie:
+        30C_7 - BankAccount
+        30C_8 - SmallBusiness
+        30C_9 - SmallBusiness2
+
+Enter a selection >>> 
