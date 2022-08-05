@@ -10,11 +10,13 @@ public class SuperLab {
     public static void main(String[] args) {
         Objs.clearScreen();
         try (Scanner console = Objs.getScanner()) {
-            out.println(WELCOME);
+            out.print(WELCOME);
             console.nextLine();
             Objs.clearScreen();
-            out.println(OPT);
+            out.print(OPT);
             Objs.setOpt(console.nextInt());
+            console.nextLine();
+            Objs.clearScreen();
             
         }
     }
