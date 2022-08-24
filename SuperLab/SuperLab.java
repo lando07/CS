@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class SuperLab {
     private static final String WELCOME = Objs.readFile("Welcome.txt");
     private static final String OPT = Objs.readFile("opt.txt");
-    LabObj labs = new LabObj();
 
     public static void main(String[] args) {
         Objs.clearScreen();
