@@ -16,7 +16,6 @@ public class SuperLab {
             Objs.setOpt(console.nextInt());
             console.nextLine();
             Objs.clearScreen();
-            
         }
     }
 }
